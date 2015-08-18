@@ -1,46 +1,3 @@
-/* // colors
-
-$color-1: #ffffff; // White
-$color-2: #9e1c51; // Disco
-$color-3: #101524; // Ebony
-
-// fonts
-
-$primary-font: 'PT Sans', sans-serif;
-$secondary-font: 'Merriweather', serif;
-
-// Number of projects
-
-$items: 4;
-
-// antialiasing mode font rendering
-
-@mixin font-smoothing {
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-// breakpoints
-
-$S:     480px;
-$M:     1024px;
-$L:     1170px;
-
-// media queries
-
-@mixin MQ($canvas) {
-  @if $canvas == S {
-   @media only screen and (min-width: $S) { @content; }
-  }
-  @else if $canvas == M {
-   @media only screen and (min-width: $M) { @content; }
-  }
-  @else if $canvas == L {
-   @media only screen and (min-width: $L) { @content; }
-  }
-} */
-
-
 @import url(https://fonts.googleapis.com/css?family=Lato:300,400,900);
 html,body {
   margin: 0;
@@ -465,6 +422,8 @@ Content Section
   position: relative;
   overflow-x: hidden;
   -webkit-overflow-scrolling: touch;
+  background-color: #101524;
+  color: #fff;
 }
 .projects-container::before {
   /* never visible - this is used in jQuery to check the current MQ */
