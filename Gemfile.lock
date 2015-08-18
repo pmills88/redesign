@@ -11,3 +11,6 @@ PLATFORMS
 DEPENDENCIES
   rack
   vienna
+
+BUNDLED WITH
+   1.10.5
