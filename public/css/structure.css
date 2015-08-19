@@ -3,12 +3,6 @@ article, aside, figure, figure img, figcaption, hgroup, footer, header, nav, sec
 }
 #container {
   text-align: left;
-  background: #fff;
-  border: 1px solid #ccc;
-  -webkit-box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 5px;
-  -moz-box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 5px;
-  -o-box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 5px;
-  box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 5px
 }
 #container {
   margin: 10% auto 10px auto;

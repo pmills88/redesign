@@ -11,6 +11,7 @@ $(document).ready(function(){
 
   $(".home").on("click",function(){
     $(".side").removeClass("show-right");
+    $(".sec-B").removeClass("show-bottom");
   });
 
   $(".contact-btn").on("click",function(){
