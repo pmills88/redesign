@@ -1,6 +1,6 @@
 $(document).ready(function(){
 
-  $(".begin").on("click",function(){
+  $(".projects").on("click",function(){
     $(".sec-A").addClass("showing");
     $(".head").hide();
   });
