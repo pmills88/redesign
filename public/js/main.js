@@ -14,7 +14,7 @@ $(document).ready(function(){
   });
 
   $(".contact-btn").on("click",function(){
-    $(".sec-B").addClass("showing");
+    // $(".sec-B").addClass("showing");
   });
 
   $(".back-btn").on("click",function(){
