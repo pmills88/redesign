@@ -240,7 +240,7 @@ html,body {
   font-size: 15px;
 }
 
-.begin {
+.projects {
   color: #cf3b28;
   margin: 30px auto;
   display: inline-block;
@@ -251,8 +251,8 @@ html,body {
             transition: all 0.3s;
 }
 
-.begin:hover {
-  /* background:#222; */
+.projects:hover {
+  background:#222;
   border-bottom: 1px solid #cf3b28;
   letter-spacing: 6px;
 }
@@ -315,6 +315,7 @@ html,body {
   -moz-transition: all 0.3s;
 }
 
+
 .contact-btn {
   border-bottom: 1px solid #eaeaea;
   background: transparent;
@@ -322,6 +323,7 @@ html,body {
 }
 
 .contact-btn:hover {
+  background:#222;
   letter-spacing: 4px;
   border-bottom: 1px solid #cf3b28;
 }
