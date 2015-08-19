@@ -219,8 +219,28 @@ html, body {
   -o-transition: all 0.5s;
   transition: all 0.5s; }
 
-.showing {
+.under {
+  position: fixed;
+  top: 100%;
+  bottom: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 11;
+  height: auto;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  background: #eaeaea;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s; }
+
+.show-right {
   left: 0; }
+
+.show-bottom {
+  top: 0; }
 
 .desc {
   margin-top: 60px; }
@@ -278,9 +298,6 @@ html, body {
 
 .sec-B {
   background: #3ab074; }
-  .sec-B h1 {
-    color: #eaeaea;
-    border-bottom: 1px solid #eaeaea; }
 
 /* --------------------------------
         Project Slides

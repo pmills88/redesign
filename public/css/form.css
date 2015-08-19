@@ -1,6 +1,5 @@
 .wufoo {
-  font-family: "Lucida Grande", "Lucida Sans Unicode", Tahoma, sans-serif;
-  letter-spacing: .01em
+  letter-spacing: .1em
 }
 .wufoo li {
   width: 64%
@@ -16,7 +15,7 @@
   display: block
 }
 .hideHeader .info, #payment.hideHeader li.first {
-  display: none
+  display: none;
 }
 .info h2 {
   font-weight: normal;

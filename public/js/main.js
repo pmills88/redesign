@@ -1,7 +1,7 @@
 $(document).ready(function(){
 
   $(".projects").on("click",function(){
-    $(".sec-A").addClass("showing");
+    $(".sec-A").addClass("show-right");
     $(".head").hide();
   });
 
@@ -10,15 +10,15 @@ $(document).ready(function(){
   });
 
   $(".home").on("click",function(){
-    $(".side").removeClass("showing");
+    $(".side").removeClass("show-right");
   });
 
   $(".contact-btn").on("click",function(){
-    // $(".sec-B").addClass("showing");
+    $(".sec-B").addClass("show-bottom");
   });
 
   $(".back-btn").on("click",function(){
-    $(".sec-B").removeClass("showing");
+    $(".sec-B").removeClass("show-bottom");
   });
 
   //check if background-images have been loaded and show list items
