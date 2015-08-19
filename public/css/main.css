@@ -171,7 +171,8 @@ html, body {
     padding-top: 30px;
     text-align: center;
     width: 600px;
-    margin: 0 auto; }
+    margin: 0 auto;
+    line-height: 40px; }
   .intro h2 {
     vertical-align: middle;
     font-size: 40px;
@@ -182,11 +183,11 @@ html, body {
     color: #cf3b28;
     font-size: 19px;
     letter-spacing: 0.5px;
-    margin: 0 0 0px 0; }
+    margin: 0; }
   .intro h5 {
     font-weight: 900;
     color: #1e1e1e;
-    margin: 0;
+    margin: -15px 0;
     font-size: 15px;
     letter-spacing: 3.9px; }
 
@@ -207,7 +208,9 @@ html, body {
   font-size: 15px; }
 
 .begin {
+  color: #cf3b28;
   margin: 30px auto;
+  display: inline-block;
   letter-spacing: 5px;
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
@@ -215,7 +218,7 @@ html, body {
   transition: all 0.3s; }
 
 .begin:hover {
-  background: #222;
+  /* background:#222; */
   border-bottom: 1px solid #cf3b28;
   letter-spacing: 6px; }
 
@@ -254,7 +257,8 @@ html, body {
   border-bottom: 1px solid #cf3b28; }
 
 .sub-btn {
-  margin: 0 auto;
+  margin: 20px;
+  display: inline-block;
   width: 120px;
   text-align: center;
   text-transform: uppercase;
@@ -270,20 +274,20 @@ html, body {
   -moz-transition: all 0.3s; }
 
 .contact-btn {
-  border-bottom: 1px solid #222;
-  background: #eaeaea;
+  border-bottom: 1px solid #eaeaea;
+  background: transparent;
   color: #cf3b28; }
 
 .contact-btn:hover {
-  background: #222;
   letter-spacing: 4px;
-  border-bottom: 1px solid #cf3b28;
-  color: #eaeaea; }
+  border-bottom: 1px solid #cf3b28; }
 
 .back-btn {
   background: #3ab074;
   color: #eaeaea;
-  border-bottom: 1px solid #222; }
+  border-bottom: 1px solid #222;
+  margin: 20px auto;
+  display: block; }
 
 .back-btn:hover {
   background: #eaeaea;
@@ -300,7 +304,7 @@ html, body {
   color: white;
   position: relative;
   width: 630px;
-  margin: 50px auto 100px auto; }
+  margin: 10% auto; }
 
 input {
   font-family: 'Lato', sans-serif;
@@ -354,8 +358,8 @@ input:hover, textarea:hover {
 Content Section
 -------------------------------- */
 .projects-container {
-  height: 100vh;
-  width: 100vw;
+  height: 100%;
+  width: 100%;
   position: relative;
   overflow-x: hidden;
   -webkit-overflow-scrolling: touch;
@@ -363,7 +367,6 @@ Content Section
   color: #fff; }
 
 .projects-container::before {
-  /* never visible - this is used in jQuery to check the current MQ */
   content: 'mobile';
   display: none; }
 
@@ -664,7 +667,7 @@ Content Section
 
 .projects-container .cd-close {
   position: fixed;
-  top: 30px;
+  top: 10%;
   right: 5%;
   background: url("../img/cd-icon-close-mobile.svg") no-repeat center center;
   -webkit-transform: scale(0);
