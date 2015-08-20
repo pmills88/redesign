@@ -13,10 +13,10 @@
   <link rel="stylesheet" href="/assets/font-awesome/css/font-awesome.min.css">
   <link rel="stylesheet" href="css/reset.css">
   <link href="/css/main.css" rel="stylesheet">
-  <link href="css/structure.css" rel="stylesheet">
-  <link href="css/form.css" rel="stylesheet">
-  <script src="scripts/wufoo.js"></script>
+  <link href="css/timeline.css" rel="stylesheet">
   <script src="js/modernizr.js"></script>
+  <script src="bower_components/Seriously.js/seriously.js"></script>
+	<script src="bower_components/Seriously.js/effects/seriously.chroma.js"></script>
 
 
 </head>
@@ -55,8 +55,8 @@
         <div class="pg-btn projects">
           Projects
         </div>
-        <div class="sub-btn contact-btn">
-          Contact
+        <div class="sub-btn about-btn">
+          About
         </div>
       </div>
     </div>
@@ -176,56 +176,80 @@
   </div>
 
   <div class="under sec-B">
-<!--     Fuck Wufu so much   -->    
-    <div class="contact-container">
-      <div id="container" class="ltr">
-        <form id="form1" name="form1" class="wufoo  page" accept-charset="UTF-8" autocomplete="off" enctype="multipart/form-data" method="post" novalidate action="https://paulkmiller.wufoo.com/forms/z10581sw1cqc0pw/#public">
-          <ul>
-            <li id="foli4" class="notranslate">
-              <label class="desc" id="title4" for="Field4"></label>
-              <span>
-                <input id="Field4" name="Field4" type="text" class="field text fn" value="" size="8" tabindex="1" placeholder="First Name" />
-                <label for="Field4"></label>
-              </span>
-              <span>
-                <input id="Field5" name="Field5" type="text" class="field text ln" value="" size="14" tabindex="2" placeholder="Last Name" />
-              </span>
-            </li>
-            <li id="foli2" class="notranslate">
-              <label class="desc" id="title2" for="Field2"></label>
-              <div>
-                <input id="Field2" name="Field2" type="email" spellcheck="false" class="field text large" value="" maxlength="255" tabindex="3" placeholder="Email Address"/>
-              </div>
-            </li>
-            <li id="foli1" class="notranslate">
-              <label class="desc" id="title1" for="Field1">
-                <span id="req_1" class="req"></span>
-              </label>
-              <div>
-                <textarea id="Field1" name="Field1" class="field textarea medium" spellcheck="true" rows="10" cols="50" tabindex="4" onkeyup="" placeholder="Message" required></textarea>
-              </div>
-              <p class="instruct" id="instruct1">
-              </p>
-            </li>
-            <li class="buttons ">
-              <div>
-                <input id="saveForm" name="saveForm" class="btTxt submit" type="submit" value="Submit" />
-              </div>
-            </li>
-            <li class="hide">
-              <label for="comment">Do Not Fill This Out</label>
-              <textarea name="comment" id="comment" rows="1" cols="1"></textarea>
-              <input type="hidden" id="idstamp" name="idstamp" value="w9lDFN/Qct3LyEBavAT80bVSeBFLghsdSRpewMXWi/s=" />
-            </li>
-          </ul>
-        </form>
-      </div>
-      <!--container-->
+  	<section id="cd-timeline" class="cd-container">
+  		<div class="cd-timeline-block">
+  			<div class="cd-timeline-img cd-picture">
+  				<img src="assets/cd-icon-picture.svg" alt="Picture">
+  			</div>
 
-    </div>
-    <div class="sub-btn back-btn">
-      Back
-    </div>
+  			<div class="cd-timeline-content">
+  				<h2>Title of section 1</h2>
+  				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum provident rerum aut hic quasi placeat iure tempora laudantium ipsa ad debitis unde? Iste voluptatibus minus veritatis qui ut.</p>
+  				<span class="cd-date">Jan 14</span>
+  			</div> 
+  		</div>
+
+  		<div class="cd-timeline-block">
+  			<div class="cd-timeline-img cd-movie">
+  				<img src="assets/cd-icon-movie.svg" alt="Movie">
+  			</div>
+
+  			<div class="cd-timeline-content">
+  				<h2>Title of section 2</h2>
+  				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum provident rerum aut hic quasi placeat iure tempora laudantium ipsa ad debitis unde?</p>
+  				<span class="cd-date">Jan 18</span>
+  			</div> 
+  		</div>
+
+  		<div class="cd-timeline-block">
+  			<div class="cd-timeline-img cd-picture">
+  				<img src="assets/cd-icon-picture.svg" alt="Picture">
+  			</div>
+
+  			<div class="cd-timeline-content">
+  				<h2>Title of section 3</h2>
+  				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, obcaecati, quisquam id molestias eaque asperiores voluptatibus cupiditate error assumenda delectus odit similique earum voluptatem doloremque dolorem ipsam quae rerum quis. Odit, itaque, deserunt corporis vero ipsum nisi eius odio natus ullam provident pariatur temporibus quia eos repellat consequuntur perferendis enim amet quae quasi repudiandae sed quod veniam dolore possimus rem voluptatum eveniet eligendi quis fugiat aliquam sunt similique aut adipisci.</p>
+  				<span class="cd-date">Jan 24</span>
+  			</div> 
+  		</div>
+
+  		<div class="cd-timeline-block">
+  			<div class="cd-timeline-img cd-location">
+  				<img src="assets/cd-icon-location.svg" alt="Location">
+  			</div>
+
+  			<div class="cd-timeline-content">
+  				<h2>Title of section 4</h2>
+  				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum provident rerum aut hic quasi placeat iure tempora laudantium ipsa ad debitis unde? Iste voluptatibus minus veritatis qui ut.</p>
+  				<span class="cd-date">Feb 14</span>
+  			</div> 
+  		</div>
+
+  		<div class="cd-timeline-block">
+  			<div class="cd-timeline-img cd-location">
+  				<img src="assets/cd-icon-location.svg" alt="Location">
+  			</div>
+
+  			<div class="cd-timeline-content">
+  				<h2>Title of section 5</h2>
+  				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum provident rerum.</p>
+  				<span class="cd-date">Feb 18</span>
+  			</div> 
+  		</div>
+
+  		<div class="cd-timeline-block">
+  			<div class="cd-timeline-img cd-movie">
+  				<img src="assets/cd-icon-movie.svg" alt="Movie">
+  			</div>
+
+  			<div class="cd-timeline-content">
+  				<h2>Final Section</h2>
+  				<p>This is the content of the last section</p>
+  				<span class="cd-date">Feb 26</span>
+  			</div> 
+  		</div>
+  	</section> <!-- cd-timeline -->
+
   </div>
 
   <!-- Script Files -->

@@ -7,6 +7,12 @@ html,body {
   background: #222;
 }
 
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
 .menu {
   width: 100%;
   height: 50px;
@@ -15,7 +21,6 @@ html,body {
   top: 0;
   z-index:111;
   line-height: 50px;
-  padding: 5px;
   border-bottom: 1px solid rgba(207,59,40,0.3);
   a {
     text-decoration: none;
@@ -221,6 +226,7 @@ html,body {
 .projects {
   color: #cf3b28;
   margin: 30px auto;
+  padding: 10px 0 25px 0;
   display: inline-block;
   letter-spacing: 5px;
     -webkit-transition: all 0.3s;
@@ -315,14 +321,14 @@ html,body {
   -moz-transition: all 0.3s;
 }
 
-
-.contact-btn {
+.about-btn {
   border-bottom: 1px solid #eaeaea;
   background: transparent;
   color: #cf3b28;
+  padding: 10px 0 25px 0;
 }
 
-.contact-btn:hover {
+.about-btn:hover {
   background:#222;
   letter-spacing: 4px;
   border-bottom: 1px solid #cf3b28;
@@ -343,7 +349,7 @@ html,body {
 }
 
 .sec-B {
-  background: #3ab074;
+  background: #7f8c97;
 }
 
 
@@ -356,7 +362,7 @@ html,body {
   position: relative;
   overflow-x: hidden;
   -webkit-overflow-scrolling: touch;
-  background-color: #101524;
+  background-color: #3B3738;
   color: #fff;
 }
 .projects-container::before {
@@ -389,7 +395,7 @@ html,body {
   left: 0;
   height: 25vh;
   width: 100%;
-  background-image: url("../img/img-1-small.jpg");
+  background-image: url("../assets/img-1-small.jpg");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -399,35 +405,35 @@ html,body {
 }
 .projects-container .cd-single-project::before {
   /* never visible - this is used in jQuery to detect if the background image has been loaded  */
-  content: 'img/img-1-small.jpg';
+  content: '../assets/img-1-small.jpg';
   display: none;
 }
 .projects-container .cd-single-project:nth-of-type(2) {
   top: 25vh;
 }
 .projects-container .cd-single-project:nth-of-type(2)::after {
-  background-image: url("../img/img-2-small.jpg");
+  background-image: url("../assets/img-2-small.jpg");
 }
 .projects-container .cd-single-project:nth-of-type(2)::before {
-  content: 'img/img-2-small.jpg';
+  content: '../assets/img-2-small.jpg';
 }
 .projects-container .cd-single-project:nth-of-type(3) {
   top: 50vh;
 }
 .projects-container .cd-single-project:nth-of-type(3)::after {
-  background-image: url("../img/img-3-small.jpg");
+  background-image: url("../assets/img-3-small.jpg");
 }
 .projects-container .cd-single-project:nth-of-type(3)::before {
-  content: 'img/img-3-small.jpg';
+  content: '../assets/img-3-small.jpg';
 }
 .projects-container .cd-single-project:nth-of-type(4) {
   top: 75vh;
 }
 .projects-container .cd-single-project:nth-of-type(4)::after {
-  background-image: url("../img/img-4-small.jpg");
+  background-image: url("../assets/img-4-small.jpg");
 }
 .projects-container .cd-single-project:nth-of-type(4)::before {
-  content: 'img/img-4-small.jpg';
+  content: '../assets/img-4-small.jpg';
 }
 .projects-container .cd-single-project.is-loaded {
   /* move items in the viewport when background images have been loaded */
@@ -469,40 +475,40 @@ html,body {
     transition: width 0s;
   }
   .projects-container .cd-single-project:first-of-type::before {
-    content: 'img/img-1-large.jpg';
+    content: '../assets/img-1-large.jpg';
   }
   .projects-container .cd-single-project:first-of-type::after {
-    background-image: url("../img/img-1-large.jpg");
+    background-image: url("../assets/img-1-large.jpg");
   }
   .projects-container .cd-single-project:nth-of-type(2) {
     top: 0;
     left: 25vw;
   }
   .projects-container .cd-single-project:nth-of-type(2)::before {
-    content: 'img/img-2-large.jpg';
+    content: '../assets/img-2-large.jpg';
   }
   .projects-container .cd-single-project:nth-of-type(2)::after {
-    background-image: url("../img/img-2-large.jpg");
+    background-image: url("../assets/img-2-large.jpg");
   }
   .projects-container .cd-single-project:nth-of-type(3) {
     top: 0;
     left: 50vw;
   }
   .projects-container .cd-single-project:nth-of-type(3)::before {
-    content: 'img/img-3-large.jpg';
+    content: '../assets/img-3-large.jpg';
   }
   .projects-container .cd-single-project:nth-of-type(3)::after {
-    background-image: url("../img/img-3-large.jpg");
+    background-image: url("../assets/img-3-large.jpg");
   }
   .projects-container .cd-single-project:nth-of-type(4) {
     top: 0;
     left: 75vw;
   }
   .projects-container .cd-single-project:nth-of-type(4)::before {
-    content: 'img/img-4-large.jpg';
+    content: '../assets/img-4-large.jpg';
   }
   .projects-container .cd-single-project:nth-of-type(4)::after {
-    background-image: url("../img/img-4-large.jpg");
+    background-image: url("../assets/img-4-large.jpg");
   }
   .projects-container .cd-single-project::after {
     height: 100vh;
@@ -676,7 +682,7 @@ html,body {
   position: fixed;
   top: 10%;
   right: 5%;
-  background: url("../img/cd-icon-close-mobile.svg") no-repeat center center;
+  background: url("../assets/cd-icon-close-mobile.svg") no-repeat center center;
   -webkit-transform: scale(0);
   -moz-transform: scale(0);
   -ms-transform: scale(0);
@@ -685,7 +691,7 @@ html,body {
 }
 @media only screen and (min-width: 1170px) {
   .projects-container .cd-close {
-    background-image: url("../img/cd-icon-close-desktop.svg");
+    background-image: url("../assets/cd-icon-close-desktop.svg");
   }
 }
 
@@ -698,11 +704,11 @@ html,body {
   -ms-transform: translateX(-50%) scale(0);
   -o-transform: translateX(-50%) scale(0);
   transform: translateX(-50%) scale(0);
-  background: url("../img/cd-icon-arrow-mobile.svg") no-repeat center center;
+  background: url("../assets/cd-icon-arrow-mobile.svg") no-repeat center center;
 }
 @media only screen and (min-width: 1170px) {
   .projects-container .cd-scroll {
-    background-image: url("../img/cd-icon-arrow-desktop.svg");
+    background-image: url("../assets/cd-icon-arrow-desktop.svg");
   }
 }
 
