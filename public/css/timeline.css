@@ -1,4 +1,4 @@
-.fa-icons{
+.fa-bubbles{
   margin: 11px;
   font-size:1em;
   color: #fff;
@@ -31,13 +31,10 @@ header h1 {
   font-size: 1.125rem;
 }
 @media only screen and (min-width: 1170px) {
-  .ghost-icon{
-    -moz-transform: scaleX(-1);
-    -o-transform: scaleX(-1);
-    -webkit-transform: scaleX(-1);
-    transform: scaleX(-1);
-    filter: FlipH;
-    -ms-filter: "FlipH";
+  .dinklebutt, .Optimus-icon, .tl-icon{
+    min-height: 40px;
+    min-width: 40px;
+    transform: translateX(-20%) translateY(-20%);
   }
   header {
     height: 300px;
@@ -65,14 +62,6 @@ header h1 {
   background: #d7e4ed;
 }
 @media only screen and (min-width: 1170px) {
-  .ghost-icon{
-    -moz-transform: scaleX(-1);
-    -o-transform: scaleX(-1);
-    -webkit-transform: scaleX(-1);
-    transform: scaleX(-1);
-    filter: FlipH;
-    -ms-filter: "FlipH";
-  }
   #cd-timeline {
     margin-top: 3em;
   }
@@ -98,18 +87,10 @@ header h1 {
   margin-bottom: 0;
 }
 @media only screen and (min-width: 1170px) {
-  .fa-icons {
+  .fa-bubbles {
     margin: 17px;
     color: white;
     font-size: 1.5em;
-  }
-  .ghost-icon{
-    -moz-transform: scaleX(-1);
-    -o-transform: scaleX(-1);
-    -webkit-transform: scaleX(-1);
-    transform: scaleX(-1);
-    filter: FlipH;
-    -ms-filter: "FlipH";
   }
   .cd-timeline-block {
     margin: 4em 0;
@@ -150,30 +131,22 @@ header h1 {
 .cd-timeline-img.cd-ga {
   background: #ffe039;
 }
-.ga-icon {
+.ga-bubble {
   color: black !important;
 }
-.ghost-icon{
+.ghost-bubble{
   background:#577074;
 }
 
-.Optimus-icon{
+.Optimus-bubble{
   background: #3B3738;
 }
 
-.cd-timeline-img.cd-tl {
+.cd-timeline-img.tl-bubble {
   background: #FDF3E7;
 }
 @media only screen and (min-width: 1170px) {
-  .ghost-icon{
-    -moz-transform: scaleX(-1);
-    -o-transform: scaleX(-1);
-    -webkit-transform: scaleX(-1);
-    transform: scaleX(-1);
-    filter: FlipH;
-    -ms-filter: "FlipH";
-  }
-  .fa-icons {
+  .fa-bubbles {
     margin: 17px;
     color: white;
     font-size: 1.5em;
@@ -329,15 +302,7 @@ header h1 {
   }
 }
 @media only screen and (min-width: 1170px) {
-  .ghost-icon{
-    -moz-transform: scaleX(-1);
-    -o-transform: scaleX(-1);
-    -webkit-transform: scaleX(-1);
-    transform: scaleX(-1);
-    filter: FlipH;
-    -ms-filter: "FlipH";
-  }
-  .fa-icons {
+  .fa-bubbles {
     margin: 17px;
     color: white;
     font-size: 1.5em;
@@ -394,14 +359,6 @@ header h1 {
 }
 
 @media only screen and (min-width: 1170px) {
-  .ghost-icon{
-    -moz-transform: scaleX(-1);
-    -o-transform: scaleX(-1);
-    -webkit-transform: scaleX(-1);
-    transform: scaleX(-1);
-    filter: FlipH;
-    -ms-filter: "FlipH";
-  }
   /* inverse bounce effect on even content blocks */
   .cssanimations .cd-timeline-block:nth-child(even) .cd-timeline-content.bounce-in {
     -webkit-animation: cd-bounce-2-inverse 0.6s;
