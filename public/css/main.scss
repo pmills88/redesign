@@ -682,7 +682,7 @@ html,body {
   position: fixed;
   top: 10%;
   right: 5%;
-  background: url("../assets/cd-icon-close-mobile.svg") no-repeat center center;
+  background: url("../assets/icon-close-mobile.svg") no-repeat center center;
   -webkit-transform: scale(0);
   -moz-transform: scale(0);
   -ms-transform: scale(0);
@@ -691,7 +691,7 @@ html,body {
 }
 @media only screen and (min-width: 1170px) {
   .projects-container .cd-close {
-    background-image: url("../assets/cd-icon-close-desktop.svg");
+    background-image: url("../assets/icon-close-desktop.svg");
   }
 }
 
@@ -704,11 +704,11 @@ html,body {
   -ms-transform: translateX(-50%) scale(0);
   -o-transform: translateX(-50%) scale(0);
   transform: translateX(-50%) scale(0);
-  background: url("../assets/cd-icon-arrow-mobile.svg") no-repeat center center;
+  background: url("../assets/icon-arrow-mobile.svg") no-repeat center center;
 }
 @media only screen and (min-width: 1170px) {
   .projects-container .cd-scroll {
-    background-image: url("../assets/cd-icon-arrow-desktop.svg");
+    background-image: url("../assets/icon-arrow-desktop.svg");
   }
 }
 
