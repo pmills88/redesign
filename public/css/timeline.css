@@ -31,6 +31,14 @@ header h1 {
   font-size: 1.125rem;
 }
 @media only screen and (min-width: 1170px) {
+  .ghost-icon{
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    filter: FlipH;
+    -ms-filter: "FlipH";
+  }
   header {
     height: 300px;
     line-height: 300px;
@@ -57,6 +65,14 @@ header h1 {
   background: #d7e4ed;
 }
 @media only screen and (min-width: 1170px) {
+  .ghost-icon{
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    filter: FlipH;
+    -ms-filter: "FlipH";
+  }
   #cd-timeline {
     margin-top: 3em;
   }
@@ -86,6 +102,14 @@ header h1 {
     margin: 17px;
     color: white;
     font-size: 1.5em;
+  }
+  .ghost-icon{
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    filter: FlipH;
+    -ms-filter: "FlipH";
   }
   .cd-timeline-block {
     margin: 4em 0;
@@ -141,6 +165,14 @@ header h1 {
   background: #FDF3E7;
 }
 @media only screen and (min-width: 1170px) {
+  .ghost-icon{
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    filter: FlipH;
+    -ms-filter: "FlipH";
+  }
   .fa-icons {
     margin: 17px;
     color: white;
@@ -297,6 +329,14 @@ header h1 {
   }
 }
 @media only screen and (min-width: 1170px) {
+  .ghost-icon{
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    filter: FlipH;
+    -ms-filter: "FlipH";
+  }
   .fa-icons {
     margin: 17px;
     color: white;
@@ -354,6 +394,14 @@ header h1 {
 }
 
 @media only screen and (min-width: 1170px) {
+  .ghost-icon{
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    filter: FlipH;
+    -ms-filter: "FlipH";
+  }
   /* inverse bounce effect on even content blocks */
   .cssanimations .cd-timeline-block:nth-child(even) .cd-timeline-content.bounce-in {
     -webkit-animation: cd-bounce-2-inverse 0.6s;
