@@ -1,0 +1,26 @@
+h2 a, p a,em {
+    padding: 0.3em 0em 0.2em 0em;
+    margin: 0.3em -0.5em 0.3em -0.5em;
+    border-radius: 50% 3em 50% 3em;
+    color: rgba(0, 0, 0, 0.7);
+    -webkit-box-decoration-break: clone;
+    -o-box-decoration-break: clone;
+    box-decoration-break: clone;
+}
+h2 a, p a {
+    background: -webkit-linear-gradient(rgba(227, 221, 36, 0.15), rgba(227, 221, 36, 0.6), rgba(196, 191, 22, 0.6), rgba(227, 221, 36, 0.24));
+    background: linear-gradient(rgba(227, 221, 36, 0.15), rgba(227, 221, 36, 0.6), rgba(196, 191, 22, 0.6), rgba(227, 221, 36, 0.24));
+    border-right: solid 0.5em rgba(196, 191, 22, 0.15);
+    border-left: solid 0.5em rgba(227, 221, 36, 0.3);
+    text-decoration: none;
+}
+h2 a:hover,h2 a:active, p a:hover, p a:active {
+    color: rgba(0, 0, 0, 0.9);
+}
+em {
+    background: -webkit-linear-gradient(rgba(167, 255, 135, 0.2), rgba(68, 219, 13, 0.55), rgba(41, 150, 10, 0.4), rgba(167, 255, 135, 0.2));
+    background: linear-gradient(rgba(167, 255, 135, 0.2), rgba(68, 219, 13, 0.55), rgba(41, 150, 10, 0.4), rgba(167, 255, 135, 0.2));
+    border-right: solid 0.5em rgba(41, 150, 10, 0.07);
+    border-left: solid 0.5em rgba(68, 219, 13, 0.2);
+    font-style: normal;
+}
