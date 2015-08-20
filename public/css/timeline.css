@@ -112,11 +112,17 @@ header h1 {
   margin-left: -12px;
   margin-top: -12px;
 }
-.cd-timeline-img.cd-picture {
-  background: #75ce66;
+.cd-timeline-img.cd-school {
+  background: #7E8F7C;
 }
-.cd-timeline-img.cd-movie {
-  background: #c03b44;
+.cd-timeline-img.cd-erac {
+  background: #02A15F;
+}
+.cd-timeline-img.cd-ga {
+  background: #ffe039;
+}
+.ga-icon {
+  color: black;
 }
 .cd-timeline-img.cd-location {
   background: #f0ca45;
