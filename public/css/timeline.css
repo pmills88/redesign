@@ -127,13 +127,13 @@ header h1 {
 }
 .cd-timeline-img img {
   display: block;
-  width: 24px;
-  height: 24px;
+  width: 30px;
+  height: 30px;
   position: relative;
   left: 50%;
   top: 50%;
-  margin-left: -12px;
-  margin-top: -12px;
+  margin-left: -15px;
+  margin-top: -15px;
 }
 .cd-timeline-img.cd-school {
   background: #7E8F7C;
