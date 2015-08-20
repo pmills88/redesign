@@ -127,10 +127,18 @@ header h1 {
   background: #ffe039;
 }
 .ga-icon {
-  color: black;
+  color: black !important;
 }
-.cd-timeline-img.cd-location {
-  background: #f0ca45;
+.ghost-icon{
+  background:#577074;
+}
+
+.Optimus-icon{
+  background: #3B3738;
+}
+
+.cd-timeline-img.cd-tl {
+  background: #FDF3E7;
 }
 @media only screen and (min-width: 1170px) {
   .fa-icons {

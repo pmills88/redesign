@@ -1,34 +1,29 @@
-(function($){
-  $.fn.bgLoaded = function(custom) {
-   	var self = this;
-
-  	var defaults = {
-  		afterLoaded : function(){
-  			this.addClass('bg-loaded');
-  		}
-  	};
-
-		var settings = $.extend({}, defaults, custom);
-
-		self.each(function(){
-			var $this = $(this),
-				bgImgs = window.getComputedStyle($this.get(0), '::before').getPropertyValue('content').replace(/'/g, "").replace(/"/g, "").split(', ');
-			$this.data('loaded-count',0);
-			$.each( bgImgs, function(key, value){
-				var img = value.replace(/^url\(["']?/, '').replace(/["']?\)$/, '');
-				$('<img/>').attr('src', img).load(function() {
-					$(this).remove(); // prevent memory leaks
-					$this.data('loaded-count',$this.data('loaded-count')+1);
-					if ($this.data('loaded-count') >= bgImgs.length) {
-						settings.afterLoaded.call($this);
-					}
-				});
-			});
-		});
-	};
-})(jQuery);
-
 $(document).ready(function(){
+
+  // var timelineBlocks = $('.cd-timeline-block'),
+  // offset = 0.8;
+  //
+  // //hide timeline blocks which are outside the viewport
+  // hideBlocks(timelineBlocks, offset);
+  //
+  // //on scolling, show/animate timeline blocks when enter the viewport
+  // $(window).on('scroll', function(){
+  //   (!window.requestAnimationFrame)
+  //     ? setTimeout(function(){ showBlocks(timelineBlocks, offset); }, 100)
+  //     : window.requestAnimationFrame(function(){ showBlocks(timelineBlocks, offset); });
+  // });
+  //
+  // function hideBlocks(blocks, offset) {
+  //   blocks.each(function(){
+  //     ( $(this).offset().top > $(window).scrollTop()+$(window).height()*offset ) && $(this).find('.cd-timeline-img, .cd-timeline-content').addClass('is-hidden');
+  //   });
+  // }
+  //
+  // function showBlocks(blocks, offset) {
+  //   blocks.each(function(){
+  //     ( $(this).offset().top <= $(window).scrollTop()+$(window).height()*offset && $(this).find('.cd-timeline-img').hasClass('is-hidden') ) && $(this).find('.cd-timeline-img, .cd-timeline-content').removeClass('is-hidden').addClass('bounce-in');
+  //   });
+  // }
 
   $(".projects").on("click",function(){
     $(".sec-A").addClass("show-right");
@@ -119,3 +114,33 @@ $(document).ready(function(){
 		}
 	}
 });
+
+(function($){
+  $.fn.bgLoaded = function(custom) {
+   	var self = this;
+
+  	var defaults = {
+  		afterLoaded : function(){
+  			this.addClass('bg-loaded');
+  		}
+  	};
+
+		var settings = $.extend({}, defaults, custom);
+
+		self.each(function(){
+			var $this = $(this),
+				bgImgs = window.getComputedStyle($this.get(0), '::before').getPropertyValue('content').replace(/'/g, "").replace(/"/g, "").split(', ');
+			$this.data('loaded-count',0);
+			$.each( bgImgs, function(key, value){
+				var img = value.replace(/^url\(["']?/, '').replace(/["']?\)$/, '');
+				$('<img/>').attr('src', img).load(function() {
+					$(this).remove(); // prevent memory leaks
+					$this.data('loaded-count',$this.data('loaded-count')+1);
+					if ($this.data('loaded-count') >= bgImgs.length) {
+						settings.afterLoaded.call($this);
+					}
+				});
+			});
+		});
+	};
+})(jQuery);
