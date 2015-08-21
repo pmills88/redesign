@@ -1,4 +1,17 @@
-
+@media only screen and (min-width: 768px) {
+  .cd-timeline-content h2 {
+    font-size: 20px;
+    font-size: 1.25rem;
+  }
+  .cd-timeline-content p {
+    font-size: 16px;
+    font-size: 1rem;
+  }
+  .cd-timeline-content .cd-read-more, .cd-timeline-content .cd-date {
+    font-size: 14px;
+    font-size: 0.875rem;
+  }
+}
 @media only screen and (min-width: 1024px) {
   .projects-container {
     &::before {
@@ -109,6 +122,123 @@
 }
 
 @media only screen and (min-width: 1170px) {
+  header {
+    height: 300px;
+    line-height: 300px;
+  }
+  headerh1 {
+    font-size: 24px;
+    font-size: 1.5rem;
+  }
+  .dinklebutt, .Optimus-icon {
+/* Still can't figure out why only translate works but margin wont... */
+    min-height: 40px;
+    min-width: 40px;
+    -webkit-transform: translateX(-12%) translateY(-12%);
+        -ms-transform: translateX(-12%) translateY(-12%);
+            transform: translateX(-12%) translateY(-12%);
+  }
+  #cd-timeline img.tl-icon{
+    min-height: 50px;
+    min-width: 50px;
+    margin: -25px 0 0 -25px;
+  }
+  #cd-timeline img.erac-logo{
+    min-height: 40px;
+    min-width: 45px;
+    margin: -20px 0 0 -24px;
+  }
+  #cd-timeline img.ga-logo {
+    min-height: 50px;
+    min-width: 50px;
+    margin: -25px 0 0 -25px;
+  }
+  #cd-timeline .fa-gmu {
+    margin: 13px;
+    color: white;
+    font-size: 2em;
+  }
+  .cd-timeline-img {
+    width: 60px;
+    height: 60px;
+    left: 50%;
+    margin-left: -30px;
+    /* Force Hardware Acceleration in WebKit */
+    -webkit-transform: translateZ(0);
+    -webkit-backface-visibility: hidden;
+  }
+  .cssanimations .cd-timeline-img.is-hidden {
+    visibility: hidden;
+  }
+  .cssanimations .cd-timeline-img.bounce-in {
+    visibility: visible;
+    -webkit-animation: cd-bounce-1 0.6s;
+    animation: cd-bounce-1 0.6s;
+  }
+  .cd-timeline-content {
+    margin-left: 0;
+    padding: 1.6em;
+    width: 45%;
+  }
+  .cd-timeline-content::before {
+    top: 24px;
+    left: 100%;
+    border-color: transparent;
+    border-left-color: white;
+  }
+  .cd-timeline-content .cd-read-more {
+    float: left;
+  }
+  .cd-timeline-content .cd-date {
+    position: absolute;
+    width: 100%;
+    left: 122%;
+    top: 6px;
+    font-size: 16px;
+    font-size: 1rem;
+  }
+  .cd-timeline-block:nth-child(even) .cd-timeline-content {
+    float: right;
+  }
+  .cd-timeline-block:nth-child(even) .cd-timeline-content::before {
+    top: 24px;
+    left: auto;
+    right: 100%;
+    border-color: transparent;
+    border-right-color: white;
+  }
+  .cd-timeline-block:nth-child(even) .cd-timeline-content .cd-read-more {
+    float: right;
+  }
+  .cd-timeline-block:nth-child(even) .cd-timeline-content .cd-date {
+    left: auto;
+    right: 122%;
+    text-align: right;
+  }
+  .cssanimations .cd-timeline-content.is-hidden {
+    visibility: hidden;
+  }
+  .cssanimations .cd-timeline-content.bounce-in {
+    visibility: visible;
+    -webkit-animation: cd-bounce-2 0.6s;
+    animation: cd-bounce-2 0.6s;
+  }
+  .cd-timeline-block {
+    margin: 4em 0;
+  }
+  .cd-timeline-block:first-child {
+    margin-top: 0;
+  }
+  .cd-timeline-block:last-child {
+    margin-bottom: 0;
+  }
+  #cd-timeline {
+    margin-top: 3em;
+  }
+  #cd-timeline::before {
+    left: 50%;
+    margin-left: -2px;
+  }
   .projects-container .cd-single-project {
     &::after {
       background-attachment: fixed;
@@ -135,5 +265,10 @@
     .cd-scroll {
       background-image: url("../assets/icon-arrow-desktop.svg");
     }
+  }
+  /* inverse bounce effect on even content blocks */
+  .cssanimations .cd-timeline-block:nth-child(even) .cd-timeline-content.bounce-in {
+    -webkit-animation: cd-bounce-2-inverse 0.6s;
+    animation: cd-bounce-2-inverse 0.6s;
   }
 }
