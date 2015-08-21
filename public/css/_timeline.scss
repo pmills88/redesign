@@ -1,32 +1,6 @@
-.fa-bubbles {
-  margin: 11px;
-  font-size: 1em;
-  color: #fff;
-}
-.erac-logo {
-  -webkit-transform: translateX(-5%) translateY(-5%);
-      -ms-transform: translateX(-5%) translateY(-5%);
-          transform: translateX(-5%) translateY(-5%);
-}
-.cd-container {
-  /* this class is used to give a max-width to the element it is applied to, and center it horizontally when it reaches that max-width */
-  width: 90%;
-  max-width: 1170px;
-  margin: 0 auto;
-}
-.cd-container::after {
-  /* clearfix */
-  content: '';
-  display: table;
-  clear: both;
-}
-span.cd-date{
-  color: #fff;
-}
 /* --------------------------------
 Main components
 -------------------------------- */
-
 header {
   height: 200px;
   line-height: 200px;
