@@ -24,7 +24,7 @@ html,body {
     text-decoration: none;
     color: inherit;
   }
-  h1 {
+  h1{
     margin: 0 0 0 14px;
     font-weight: 400;
     color: #eaeaea;
@@ -117,22 +117,6 @@ html,body {
   opacity: 0;
 }
 
-/* .down {
-  width: 20px;
-  height: 20px;
-  opacity: 0.2;
-  border-bottom: 5px solid #cf3b28;
-  border-right: 5px solid #cf3b28;
-  position: absolute;
-  bottom: 13px;
-  left: 50%;
-  cursor: pointer;
-  transform: rotate(45deg);
-  -webkit-transform:rotate(45deg);
-  -moz-transform:rotate(45deg);
-} */
-
-
 .name {
   width: 500px;
   top: 50%;
@@ -216,19 +200,16 @@ html,body {
   height: 15px;
   line-height: 15px;
   border-bottom: 1px solid #eaeaea;
-  padding: 10px 0;
   cursor: pointer;
   font-weight: 300;
   font-size: 15px;
 }
 
-
-
-.side {
+.left {
   position:fixed;
   top: 0;
   bottom: 0;
-  left: 100%;
+  right: 100%;
   width: 100%;
   z-index:11;
   height: auto;
@@ -255,8 +236,8 @@ html,body {
             transition: all 0.5s;
 }
 
-.show-right {
-  left: 0;
+.show-left {
+  right: 0;
 }
 
 .show-bottom {

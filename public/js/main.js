@@ -26,7 +26,7 @@ $(document).ready(function(){
   // }
 
   $(".projects").on("click",function(){
-    $(".sec-A").addClass("show-right");
+    $(".sec-A").addClass("show-left");
     $(".head").hide();
   });
 
@@ -35,7 +35,7 @@ $(document).ready(function(){
   });
 
   $(".home").on("click",function(){
-    $(".side").removeClass("show-right");
+    $(".left").removeClass("show-left");
     $(".sec-B").removeClass("show-bottom");
   });
 
