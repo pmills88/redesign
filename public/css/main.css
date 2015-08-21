@@ -621,22 +621,23 @@ html, body {
   opacity: 0; }
 
 .name {
-  width: 500px;
+  width: 100%;
   top: 50%;
   position: absolute;
   left: 50%;
-  margin-left: -250px;
+  font-size: .8em;
+  margin-left: -55%;
   margin-top: -30px; }
 
 .sub-name {
   position: absolute;
   top: 50%;
   left: 50%;
-  margin-top: 7px;
+  margin-top: 10px;
   font-weight: 300;
-  margin-left: 23px;
+  margin-left: -2%;
   color: #cf3b28;
-  font-size: 35px; }
+  font-size: .5em; }
 
 .content-wrap {
   position: absolute;
@@ -660,7 +661,7 @@ html, body {
   .intro .text {
     padding-top: 30px;
     text-align: center;
-    width: 600px;
+    width: 100%;
     margin: 0 auto;
     line-height: 40px; }
   .intro h2 {
@@ -802,6 +803,10 @@ html, body {
     font-size: 14px;
     font-size: 0.875rem; } }
 @media only screen and (min-width: 1024px) {
+  .sub-name {
+    margin-top: 10px;
+    margin-left: 6%; }
+
   .projects-container::before {
     /* never visible - this is used in jQuery to check the current MQ */
     content: 'desktop'; }

@@ -13,6 +13,10 @@
   }
 }
 @media only screen and (min-width: 1024px) {
+  .sub-name{
+    margin-top: 10px;
+    margin-left: 6%;
+  }
   .projects-container {
     &::before {
       /* never visible - this is used in jQuery to check the current MQ */
