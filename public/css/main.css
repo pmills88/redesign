@@ -437,9 +437,6 @@ span.cd-date {
     content: 'mobile';
     display: none; }
   .projects-container .cd-single-project {
-    position: absolute;
-    top: 0;
-    left: 0;
     width: 100%;
     height: 25%;
     overflow: hidden;
@@ -456,7 +453,7 @@ span.cd-date {
       position: absolute;
       top: 0;
       left: 0;
-      height: 25vh;
+      height: 100%;
       width: 100%;
       background-image: url("../assets/img-1-small.jpg");
       background-repeat: no-repeat;
@@ -493,6 +490,7 @@ span.cd-date {
       transform: translateX(0); }
     .projects-container .cd-single-project.is-full-width {
       /* selected item */
+      position: absolute;
       top: 0;
       height: auto;
       z-index: 1;
@@ -864,7 +862,7 @@ html, body {
 
 .left {
   position: fixed;
-  top: 0;
+  top: 50px;
   bottom: 0;
   right: 100%;
   width: 100%;
@@ -960,6 +958,9 @@ html, body {
     /* never visible - this is used in jQuery to check the current MQ */
     content: 'desktop'; }
   .projects-container .cd-single-project {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 25vw;
     height: 100%;
     opacity: 0;
