@@ -1,150 +1,207 @@
-$(document).ready(function(){
-
-  var timelineBlocks = $('.cd-timeline-block'),
-  offset = .8;
-
-  //hide timeline blocks which are outside the viewport
-  hideBlocks(timelineBlocks, offset);
-
-  //on scolling, show/animate timeline blocks when enter the viewport
-  $('.under').on('scroll', function(){
-    (!window.requestAnimationFrame)
-      ? setTimeout(function(){ showBlocks(timelineBlocks, offset); }, 100)
-      : window.requestAnimationFrame(function(){ showBlocks(timelineBlocks, offset); });
-  });
-
-  function hideBlocks(blocks, offset) {
-    blocks.each(function(){
-      ( $(this).offset().top > $('.under').scrollTop() + $(window).height()*offset ) &&
-        $(this).find('.cd-timeline-img, .cd-timeline-content').addClass('is-hidden');
-    });
-  }
-
-  function showBlocks(blocks, offset) {
-    blocks.each(function(){
-      ( $(this).offset().top <= $('.under').scrollTop()+$(window).height()*offset &&
-        $(this).find('.cd-timeline-img').hasClass('is-hidden')) &&
-        $(this).find('.cd-timeline-img, .cd-timeline-content').removeClass('is-hidden').addClass('bounce-in');
-    });
-  }
-
-  $(".projects").on("click",function(){
+$(document).ready(function() {
+  disableScroll();
+  ////////  General Shtuff  ////////
+  $(".projects").on("click", function() {
     $(".sec-A").addClass("show-left");
     $(".head").hide();
   });
 
-  $(".down").on("click",function(){
+  $(".down").on("click", function() {
     $(".head").addClass("head-hide");
+    enableScroll();
   });
 
-  $(".home").on("click",function(){
+  $(".home").on("click", function() {
     $(".left").removeClass("show-left");
     $(".sec-B").removeClass("show-bottom");
   });
 
-  $(".about-btn").on("click",function(){
+  $(".about-btn").on("click", function() {
     $(".sec-B").addClass("show-bottom");
-   setTimeout(function(){ showBlocks(timelineBlocks, offset); }, 500)
+    setTimeout(function() {
+      showBlocks(timelineBlocks, offset);
+    }, 500);
   });
 
-  //check if background-images have been loaded and show list items
-	$('.cd-single-project').bgLoaded({
-	  	afterLoaded : function(){
-	   		showCaption($('.projects-container li').eq(0));
-	  	}
-	});
+  ////////  Disable Scroll Until Click Code  ////////
 
-	//open project
-	$('.cd-single-project').on('click', function(){
-		var selectedProject = $(this),
-			toggle = !selectedProject.hasClass('is-full-width');
-		if(toggle) toggleProject($(this), $('.projects-container'), toggle);
-	});
+  // left: 37, up: 38, right: 39, down: 40,
+  // spacebar: 32, pageup: 33, pagedown: 34, end: 35, home: 36
+  var keys = {
+    37: 1,
+    38: 1,
+    39: 1,
+    40: 1
+  };
 
-	//close project
-	$('.projects-container .cd-close').on('click', function(){
-		toggleProject($('.is-full-width'), $('.projects-container'), false);
-	});
+  function preventDefault(e) {
+    e = e || window.event;
+    if (e.preventDefault)
+      e.preventDefault();
+    e.returnValue = false;
+  }
 
-	//scroll to project info
-	$('.projects-container .cd-scroll').on('click', function(){
-		$('.projects-container').animate({'scrollTop':$(window).height()}, 500);
-	});
+  function preventDefaultForScrollKeys(e) {
+    if (keys[e.keyCode]) {
+      preventDefault(e);
+      return false;
+    }
+  }
 
-	//update title and .cd-scroll opacity while scrolling
-	$('.projects-container').on('scroll', function(){
-		window.requestAnimationFrame(changeOpacity);
-	});
+  function disableScroll() {
+    if (window.addEventListener) // older FF
+      window.addEventListener('DOMMouseScroll', preventDefault, false);
+    window.onwheel = preventDefault; // modern standard
+    window.onmousewheel = document.onmousewheel = preventDefault; // older browsers, IE
+    window.ontouchmove = preventDefault; // mobile
+    document.onkeydown = preventDefaultForScrollKeys;
+  }
 
-	function toggleProject(project, container, bool) {
-		if(bool) {
-			//expand project
-			container.addClass('project-is-open');
-			project.addClass('is-full-width').siblings('li').removeClass('is-loaded');
-		} else {
-			//check media query
-			var mq = window.getComputedStyle(document.querySelector('.projects-container'), '::before').getPropertyValue('content').replace(/"/g, "").replace(/'/g, ""),
-				delay = ( mq == 'mobile' ) ? 100 : 0;
+  function enableScroll() {
+    if (window.removeEventListener)
+      window.removeEventListener('DOMMouseScroll', preventDefault, false);
+    window.onmousewheel = document.onmousewheel = null;
+    window.onwheel = null;
+    window.ontouchmove = null;
+    document.onkeydown = null;
+  }
 
-			container.removeClass('project-is-open');
-			//fade out project
-			project.animate({opacity: 0}, 800, function(){
-				project.removeClass('is-loaded');
-				$('.projects-container').find('.cd-scroll').attr('style', '');
-				setTimeout(function(){
-					project.attr('style', '').removeClass('is-full-width').find('.cd-title').attr('style', '');
-				}, delay);
-				setTimeout(function(){
-					showCaption($('.projects-container li').eq(0));
-				}, 300);
-			});
-		}
-	}
+  ////////  Projects Code   ////////
+  // check if background-images have been loaded and show list items
+  $('.cd-single-project').bgLoaded({
+    afterLoaded: function() {
+      showCaption($('.projects-container li').eq(0));
+    }
+  });
 
-	function changeOpacity(){
-		var newOpacity = 1- ($('.projects-container').scrollTop())/300;
-		$('.projects-container .cd-scroll').css('opacity', newOpacity);
-		$('.is-full-width .cd-title').css('opacity', newOpacity);
-		//Bug fixed - Chrome background-attachment:fixed rendering issue
-		$('.is-full-width').hide().show(0);
-	}
+  // open project
+  $('.cd-single-project').on('click', function() {
+    var selectedProject = $(this),
+      toggle = !selectedProject.hasClass('is-full-width');
+    if (toggle) toggleProject($(this), $('.projects-container'), toggle);
+  });
 
-	function showCaption(project) {
-		if(project.length > 0 ) {
-			setTimeout(function(){
-				project.addClass('is-loaded');
-				showCaption(project.next());
-			}, 150);
-		}
-	}
+  // close project
+  $('.projects-container .cd-close').on('click', function() {
+    toggleProject($('.is-full-width'), $('.projects-container'), false);
+  });
+
+  // scroll to project info
+  $('.projects-container .cd-scroll').on('click', function() {
+    $('.projects-container').animate({
+      'scrollTop': $(window).height()
+    }, 500);
+  });
+
+  // update title and .cd-scroll opacity while scrolling
+  $('.projects-container').on('scroll', function() {
+    window.requestAnimationFrame(changeOpacity);
+  });
+
+  function toggleProject(project, container, bool) {
+    if (bool) {
+      // expand project
+      container.addClass('project-is-open');
+      project.addClass('is-full-width').siblings('li').removeClass('is-loaded');
+    } else {
+      // check media query
+      var mq = window.getComputedStyle(document.querySelector('.projects-container'), '::before').getPropertyValue('content').replace(/"/g, "").replace(/'/g, ""),
+        delay = (mq == 'mobile') ? 100 : 0;
+
+      container.removeClass('project-is-open');
+      // fade out project
+      project.animate({
+        opacity: 0
+      }, 800, function() {
+        project.removeClass('is-loaded');
+        $('.projects-container').find('.cd-scroll').attr('style', '');
+        setTimeout(function() {
+          project.attr('style', '').removeClass('is-full-width').find('.cd-title').attr('style', '');
+        }, delay);
+        setTimeout(function() {
+          showCaption($('.projects-container li').eq(0));
+        }, 300);
+      });
+    }
+  }
+
+  function changeOpacity() {
+    var newOpacity = 1 - ($('.projects-container').scrollTop()) / 300;
+    $('.projects-container .cd-scroll').css('opacity', newOpacity);
+    $('.is-full-width .cd-title').css('opacity', newOpacity);
+    // Bug fixed - Chrome background-attachment:fixed rendering issue
+    $('.is-full-width').hide().show(0);
+  }
+
+  function showCaption(project) {
+    if (project.length > 0) {
+      setTimeout(function() {
+        project.addClass('is-loaded');
+        showCaption(project.next());
+      }, 150);
+    }
+  }
+
+  ////////  Fade-In code from About Me Section  ////////
+  var timelineBlocks = $('.cd-timeline-block'),
+    offset = .8;
+
+  // hide timeline blocks which are outside the viewport
+  hideBlocks(timelineBlocks, offset);
+
+  // on scolling, show/animate timeline blocks when enter the viewport
+  $('.under').on('scroll', function() {
+    (!window.requestAnimationFrame) ? setTimeout(function() {
+      showBlocks(timelineBlocks, offset);
+    }, 100): window.requestAnimationFrame(function() {
+      showBlocks(timelineBlocks, offset);
+    });
+  });
+
+  function hideBlocks(blocks, offset) {
+    blocks.each(function() {
+      ($(this).offset().top > $('.under').scrollTop() + $(window).height() * offset) &&
+      $(this).find('.cd-timeline-img, .cd-timeline-content').addClass('is-hidden');
+    });
+  }
+
+  function showBlocks(blocks, offset) {
+    blocks.each(function() {
+      ($(this).offset().top <= $('.under').scrollTop() + $(window).height() * offset &&
+        $(this).find('.cd-timeline-img').hasClass('is-hidden')) &&
+      $(this).find('.cd-timeline-img, .cd-timeline-content').removeClass('is-hidden').addClass('bounce-in');
+    });
+  }
+
 });
 
-(function($){
+////////  BG Loaded Function Code  ////////
+(function($) {
   $.fn.bgLoaded = function(custom) {
-   	var self = this;
+    var self = this;
 
-  	var defaults = {
-  		afterLoaded : function(){
-  			this.addClass('bg-loaded');
-  		}
-  	};
+    var defaults = {
+      afterLoaded: function() {
+        this.addClass('bg-loaded');
+      }
+    };
 
-		var settings = $.extend({}, defaults, custom);
+    var settings = $.extend({}, defaults, custom);
 
-		self.each(function(){
-			var $this = $(this),
-				bgImgs = window.getComputedStyle($this.get(0), '::before').getPropertyValue('content').replace(/'/g, "").replace(/"/g, "").split(', ');
-			$this.data('loaded-count',0);
-			$.each( bgImgs, function(key, value){
-				var img = value.replace(/^url\(["']?/, '').replace(/["']?\)$/, '');
-				$('<img/>').attr('src', img).load(function() {
-					$(this).remove(); // prevent memory leaks
-					$this.data('loaded-count',$this.data('loaded-count')+1);
-					if ($this.data('loaded-count') >= bgImgs.length) {
-						settings.afterLoaded.call($this);
-					}
-				});
-			});
-		});
-	};
+    self.each(function() {
+      var $this = $(this),
+        bgImgs = window.getComputedStyle($this.get(0), '::before').getPropertyValue('content').replace(/'/g, "").replace(/"/g, "").split(', ');
+      $this.data('loaded-count', 0);
+      $.each(bgImgs, function(key, value) {
+        var img = value.replace(/^url\(["']?/, '').replace(/["']?\)$/, '');
+        $('<img/>').attr('src', img).load(function() {
+          $(this).remove(); // prevent memory leaks
+          $this.data('loaded-count', $this.data('loaded-count') + 1);
+          if ($this.data('loaded-count') >= bgImgs.length) {
+            settings.afterLoaded.call($this);
+          }
+        });
+      });
+    });
+  };
 })(jQuery);
