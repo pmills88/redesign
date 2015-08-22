@@ -10,7 +10,13 @@ html,body {
 *, *:after, *:before {
   box-sizing: border-box;
 }
+#cd-timeline span.cd-date {
+  color: #000;
+}
 
+.cd-title h2 {
+font-size: 1.2em;
+}
 .menu {
   width: 100%;
   height: 50px;
@@ -169,31 +175,33 @@ html,body {
   }
   h2 {
     vertical-align:middle;
-    font-size: 40px;
     margin: -5px 0;
     letter-spacing: 5px;
+    font-size: 2.3em;
   }
   h3 {
     font-weight: 300;
     color:#cf3b28;
     font-size: 19px;
     letter-spacing: 0.5px;
-    margin: 0;
+    margin: 20px;
+    line-height: normal;;
   }
   h5 {
     font-weight: 900;
     color:#1e1e1e;
-    margin: -15px 0;
+    margin: -15px;
     font-size: 15px;
     letter-spacing: 3.5px;
+    line-height: normal;
   }
 }
 
 #bot-h5 {
   color: #eaeaea;
   font-weight: 300;
-  letter-spacing: 10px;
-  margin-top: 30px;
+  letter-spacing: 5px;
+  margin-top: 10%;
 }
 
 .pg-btn {

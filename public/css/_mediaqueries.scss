@@ -13,6 +13,22 @@
   }
 }
 @media only screen and (min-width: 1024px) {
+  .intro{
+    h2{
+      font-size: 40px;
+    }
+    h3{
+      margin: 0;
+      line-height: inherit;
+    }
+    h5{
+      line-height: inherit;
+    }
+  }
+  #bot-h5{
+    letter-spacing: 10px;
+    margin-top: 30px;
+  }
   .sub-name{
     margin-top: 10px;
     margin-left: 6%;
@@ -118,6 +134,9 @@
   }
   .cd-title p {
     display: block;
+  }
+  .cd-title h2{
+    font-size: 1.5em;
   }
   .cd-project-info {
     position: relative;
