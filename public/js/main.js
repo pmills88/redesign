@@ -1,7 +1,7 @@
 $(document).ready(function(){
 
   var timelineBlocks = $('.cd-timeline-block'),
-  offset = 0.2;
+  offset = .8;
 
   //hide timeline blocks which are outside the viewport
   hideBlocks(timelineBlocks, offset);
@@ -22,7 +22,9 @@ $(document).ready(function(){
 
   function showBlocks(blocks, offset) {
     blocks.each(function(){
-      ( $(this).offset().top <= $('.under').scrollTop()+$(window).height()*offset && $(this).find('.cd-timeline-img').hasClass('is-hidden'))  && $(this).find('.cd-timeline-img, .cd-timeline-content').removeClass('is-hidden').addClass('bounce-in');
+      ( $(this).offset().top <= $('.under').scrollTop()+$(window).height()*offset &&
+        $(this).find('.cd-timeline-img').hasClass('is-hidden')) &&
+        $(this).find('.cd-timeline-img, .cd-timeline-content').removeClass('is-hidden').addClass('bounce-in');
     });
   }
 

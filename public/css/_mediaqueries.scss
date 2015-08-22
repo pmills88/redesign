@@ -27,11 +27,17 @@
   }
   #bot-h5{
     letter-spacing: 10px;
-    margin-top: 30px;
+    margin-top: 50px;
+  }
+  .name{
+    font-size: 1em;
+    margin-left: -50%;
   }
   .sub-name{
-    margin-top: 10px;
-    margin-left: 6%;
+    margin-top: 7px;
+    margin-left: 23px;
+    position: absolute;
+    font-size: 35px
   }
   .projects-container {
     &::before {
