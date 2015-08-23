@@ -8,7 +8,7 @@ $(document).ready(function() {
 
   $(".down").on("click", function() {
     $(".head").addClass("head-hide");
-    enableScroll();
+    // enableScroll();
   });
 
   $(".home").on("click", function() {
