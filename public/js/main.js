@@ -1,5 +1,5 @@
 $(document).ready(function() {
-  disableScroll();
+  // disableScroll();
   ////////  General Shtuff  ////////
   $(".projects").on("click", function() {
     $(".sec-A").addClass("show-left");
