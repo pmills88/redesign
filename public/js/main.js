@@ -86,6 +86,7 @@ $(document).ready(function() {
     toggleProject($('.is-full-width'), $('.projects-container'), false);
   });
 
+
   // scroll to project info
   $('.projects-container .cd-scroll').on('click', function() {
     $('.projects-container').animate({

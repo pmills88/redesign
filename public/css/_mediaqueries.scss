@@ -278,7 +278,7 @@
       transition: transform 0.8s, opacity 0.5s;
     }
     &.is-loaded::after {
-      opacity: 0; /* Background opacity control */
+      /* opacity: 0; */ /* Background opacity control */
     }
   }
   .no-touch .projects-container .cd-single-project:hover::after, .projects-container .cd-single-project.is-full-width.is-loaded::after {
