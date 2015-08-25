@@ -50,7 +50,7 @@
       left: 0;
       width: 25vw;
       height: 100%;
-      opacity: 0;
+      /* opacity: 0; */
       -webkit-transform: translateX(0);
       -ms-transform: translateX(0);
       transform: translateX(0);
@@ -97,7 +97,7 @@
       &::after {
         height: 100vh;
         width: 100%;
-        opacity: 0;
+        /* opacity: 0; */
       }
       &.is-loaded {
         /* show items when background images have been loaded */
@@ -278,7 +278,7 @@
       transition: transform 0.8s, opacity 0.5s;
     }
     &.is-loaded::after {
-      opacity: 0; /* Background opacity control */
+      /* opacity: 0; */ /* Background opacity control */
     }
   }
   .no-touch .projects-container .cd-single-project:hover::after, .projects-container .cd-single-project.is-full-width.is-loaded::after {
