@@ -435,7 +435,9 @@ span.cd-date {
   position: fixed;
   top: 10%;
   right: 5%;
-  background: url("../assets/icon-close-mobile.svg") no-repeat center center;
+  background: url("../assets/icon-close-mobile.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
   -webkit-transform: scale(0);
   -ms-transform: scale(0);
   transform: scale(0); }
@@ -446,7 +448,9 @@ span.cd-date {
   -webkit-transform: translateX(-50%) scale(0);
   -ms-transform: translateX(-50%) scale(0);
   transform: translateX(-50%) scale(0);
-  background: url("../assets/icon-arrow-mobile.svg") no-repeat center center; }
+  background: url("../assets/icon-arrow-mobile.svg");
+  background-repeat: no-repeat;
+  background-position: center center; }
 
 .down {
   position: absolute;
@@ -455,7 +459,9 @@ span.cd-date {
   -webkit-transform: translateX(-50%) scale(0);
   -ms-transform: translateX(-50%) scale(0);
   transform: translateX(-50%) scale(0);
-  background: url("../assets/icon-arrow-mobile.svg") no-repeat center center; }
+  background: url("../assets/icon-arrow-mobile.svg");
+  background-repeat: no-repeat;
+  background-position: center center; }
 
 .project-is-open .cd-close, .project-is-open .cd-scroll {
   visibility: visible;
