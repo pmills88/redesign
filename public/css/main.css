@@ -454,7 +454,7 @@ span.cd-date {
 
 .down {
   position: absolute;
-  bottom: 30px;
+  bottom: 70px;
   left: 50%;
   -webkit-transform: translateX(-50%) scale(0);
   -ms-transform: translateX(-50%) scale(0);
