@@ -1,6 +1,6 @@
 $(document).ready(function() {
-  // disableScroll();
-  ////////  General Shtuff  ////////
+
+  ////////  General Stuff  ////////
   $(".projects").on("click", function() {
     $(".sec-A").addClass("show-left");
     $(".head").hide();
@@ -22,49 +22,6 @@ $(document).ready(function() {
       showBlocks(timelineBlocks, offset);
     }, 500);
   });
-
-  ////////  Disable Scroll Until Click Code  ////////
-
-  // left: 37, up: 38, right: 39, down: 40,
-  // spacebar: 32, pageup: 33, pagedown: 34, end: 35, home: 36
-  // var keys = {
-  //   37: 1,
-  //   38: 1,
-  //   39: 1,
-  //   40: 1
-  // };
-  //
-  // function preventDefault(e) {
-  //   e = e || window.event;
-  //   if (e.preventDefault)
-  //     e.preventDefault();
-  //   e.returnValue = false;
-  // }
-  //
-  // function preventDefaultForScrollKeys(e) {
-  //   if (keys[e.keyCode]) {
-  //     preventDefault(e);
-  //     return false;
-  //   }
-  // }
-  //
-  // function disableScroll() {
-  //   if (window.addEventListener) // older FF
-  //     window.addEventListener('DOMMouseScroll', preventDefault, false);
-  //   window.onwheel = preventDefault; // modern standard
-  //   window.onmousewheel = document.onmousewheel = preventDefault; // older browsers, IE
-  //   window.ontouchmove = preventDefault; // mobile
-  //   document.onkeydown = preventDefaultForScrollKeys;
-  // }
-  //
-  // function enableScroll() {
-  //   if (window.removeEventListener)
-  //     window.removeEventListener('DOMMouseScroll', preventDefault, false);
-  //   window.onmousewheel = document.onmousewheel = null;
-  //   window.onwheel = null;
-  //   window.ontouchmove = null;
-  //   document.onkeydown = null;
-  // }
 
   //////  Projects Code   ////////
   // check if background-images have been loaded and show list items
@@ -173,6 +130,11 @@ $(document).ready(function() {
       $(this).find('.cd-timeline-img, .cd-timeline-content').removeClass('is-hidden').addClass('bounce-in');
     });
   }
+
+  function colorTrace(msg, color) {
+    console.log("%c" + msg, "color:" + color + ";font-weight:bold;");
+  }
+  colorTrace("Super mad credits to Justin Walker for my site's main inspiration -- http://codepen.io/jmw/", "blue");
 
 });
 

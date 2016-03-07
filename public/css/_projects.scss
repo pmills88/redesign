@@ -171,6 +171,9 @@ span.cd-date{
   color: #3f538e;
   -webkit-transition: opacity 0.4s 0s, visibility 0s 0.4s;
   transition: opacity 0.4s 0s, visibility 0s 0.4s;
+  div{
+    margin: -4em 0 4em 0;
+  }
 }
 
 .is-full-width .cd-project-info {
@@ -183,6 +186,7 @@ span.cd-date{
   max-width: 800px;
   margin: 0 auto;
   line-height: 2;
+  margin-bottom: 1.5em;
 }
 
 .projects-container {
@@ -242,7 +246,7 @@ span.cd-date{
 
 .down {
   position: absolute;
-  bottom: 70px; 
+  bottom: 70px;
   left: 50%;
   -webkit-transform: translateX(-50%) scale(0);
   -ms-transform: translateX(-50%) scale(0);

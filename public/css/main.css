@@ -1,4 +1,3 @@
-/* @import 'form'; */
 @import url(https://fonts.googleapis.com/css?family=Lato:300,400,900);
 h2 a, p a, em {
   padding: 0.3em 0em 0.2em 0em;
@@ -394,6 +393,8 @@ span.cd-date {
   color: #3f538e;
   -webkit-transition: opacity 0.4s 0s, visibility 0s 0.4s;
   transition: opacity 0.4s 0s, visibility 0s 0.4s; }
+  .cd-project-info div {
+    margin: -4em 0 4em 0; }
 
 .is-full-width .cd-project-info {
   visibility: visible;
@@ -403,7 +404,8 @@ span.cd-date {
   width: 90%;
   max-width: 800px;
   margin: 0 auto;
-  line-height: 2; }
+  line-height: 2;
+  margin-bottom: 1.5em; }
 
 .projects-container .cd-close, .projects-container .cd-scroll {
   display: block;
