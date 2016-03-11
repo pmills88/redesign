@@ -43,6 +43,10 @@ $(document).ready(function() {
     toggleProject($('.is-full-width'), $('.projects-container'), false);
   });
 
+  $('.home').on('click', function(){
+    toggleProject($('.is-full-width'), $('.projects-container'), false);
+  });
+
 
   // scroll to project info
   $('.projects-container .cd-scroll').on('click', function() {
@@ -134,7 +138,7 @@ $(document).ready(function() {
   function colorTrace(msg, color) {
     console.log("%c" + msg, "color:" + color + ";font-weight:bold;");
   }
-  colorTrace("Super mad credits to Justin Walker for my site's main inspiration -- http://codepen.io/jmw/", "blue");
+  colorTrace("Super mad credits to Justin Walker for inspiration -- http://codepen.io/jmw/", "blue");
 
 });
 

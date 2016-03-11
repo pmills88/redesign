@@ -41,14 +41,6 @@ headerh1 {
   position: relative;
   padding: 2em 0;
   margin-top: 2em; }
-  #cd-timeline .erac-logo {
-    min-height: 30px;
-    min-width: 35px;
-    margin-left: -19px; }
-  #cd-timeline .fa-gmu {
-    color: white;
-    font-size: 1.5em;
-    margin: 6px 0px 0 7px; }
   #cd-timeline::before {
     /* this is the vertical line */
     content: '';
@@ -57,7 +49,21 @@ headerh1 {
     left: 18px;
     height: 100%;
     width: 5px;
-    background: #d7e4ed; }
+    background: #d7e4ed;
+    background: -moz-linear-gradient(top, rgba(215, 228, 237, 0) 0%, #d7e4ed 8%, #d7e4ed 92%, rgba(215, 228, 237, 0) 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #1e5799), color-stop(100%, #7db9e8));
+    background: -webkit-linear-gradient(top, rgba(215, 228, 237, 0) 0%, #d7e4ed 8%, #d7e4ed 92%, rgba(215, 228, 237, 0) 100%);
+    background: -o-linear-gradient(top, rgba(215, 228, 237, 0) 0%, #d7e4ed 8%, #d7e4ed 92%, rgba(215, 228, 237, 0) 100%);
+    background: -ms-linear-gradient(top, rgba(215, 228, 237, 0) 0%, #d7e4ed 8%, #d7e4ed 92%, rgba(215, 228, 237, 0) 100%);
+    background: linear-gradient(to bottom, rgba(215, 228, 237, 0) 0%, #d7e4ed 8%, #d7e4ed 92%, rgba(215, 228, 237, 0) 100%); }
+  #cd-timeline .erac_logo {
+    min-height: 30px;
+    min-width: 35px;
+    margin-left: -19px; }
+  #cd-timeline .fa-gmu {
+    color: white;
+    font-size: 1.5em;
+    margin: 6px 0px 0 7px; }
 
 .cd-timeline-block {
   position: relative;
@@ -95,8 +101,11 @@ headerh1 {
   .cd-timeline-img.cd-ga {
     background: #ffe039; }
 
+.jbs-bubble {
+  background: #eee; }
+
 .ga-bubble {
-  color: black !important; }
+  color: #000 !important; }
 
 .ghost-bubble {
   background: #577074; }
@@ -936,28 +945,32 @@ html, body {
     font-size: 24px;
     font-size: 1.5rem; }
 
-  .dinklebutt, .Optimus-icon {
-    /* Still can't figure out why only translate works but margin wont... */
+  .dinklebutt, .Optimus_logo {
     min-height: 40px;
     min-width: 40px;
     -webkit-transform: translateX(-12%) translateY(-12%);
     -ms-transform: translateX(-12%) translateY(-12%);
     transform: translateX(-12%) translateY(-12%); }
 
-  #cd-timeline img.tl-icon {
+  #cd-timeline img.tl_logo {
     min-height: 50px;
     min-width: 50px;
     margin: -25px 0 0 -25px; }
 
-  #cd-timeline img.erac-logo {
+  #cd-timeline img.erac_logo {
     min-height: 40px;
     min-width: 45px;
     margin: -20px 0 0 -24px; }
 
-  #cd-timeline img.ga-logo {
+  #cd-timeline img.ga_logo {
     min-height: 50px;
     min-width: 50px;
     margin: -25px 0 0 -25px; }
+
+  #cd-timeline img.jbs_logo {
+    min-height: 50px;
+    min-width: 50px;
+    margin: -24px 0 0 -25px; }
 
   #cd-timeline .fa-gmu {
     margin: 13px;

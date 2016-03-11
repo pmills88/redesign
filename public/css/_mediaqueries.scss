@@ -26,7 +26,7 @@
     }
   }
   #bot-h5{
-    letter-spacing: 10px; 
+    letter-spacing: 10px;
     margin-top: 50px;
   }
   .name{
@@ -159,28 +159,32 @@
     font-size: 24px;
     font-size: 1.5rem;
   }
-  .dinklebutt, .Optimus-icon {
-/* Still can't figure out why only translate works but margin wont... */
+  .dinklebutt, .Optimus_logo {
     min-height: 40px;
     min-width: 40px;
     -webkit-transform: translateX(-12%) translateY(-12%);
         -ms-transform: translateX(-12%) translateY(-12%);
             transform: translateX(-12%) translateY(-12%);
   }
-  #cd-timeline img.tl-icon{
+  #cd-timeline img.tl_logo{
     min-height: 50px;
     min-width: 50px;
     margin: -25px 0 0 -25px;
   }
-  #cd-timeline img.erac-logo{
+  #cd-timeline img.erac_logo{
     min-height: 40px;
     min-width: 45px;
     margin: -20px 0 0 -24px;
   }
-  #cd-timeline img.ga-logo {
+  #cd-timeline img.ga_logo {
     min-height: 50px;
     min-width: 50px;
     margin: -25px 0 0 -25px;
+  }
+  #cd-timeline img.jbs_logo{
+    min-height: 50px;
+    min-width: 50px;
+    margin: -24px 0 0 -25px;
   }
   #cd-timeline .fa-gmu {
     margin: 13px;

@@ -12,16 +12,6 @@ headerh1 {
 }
 
 #cd-timeline {
-  .erac-logo {
-    min-height: 30px;
-    min-width: 35px;
-    margin-left: -19px;
-  }
-  .fa-gmu {
-    color: white;
-    font-size: 1.5em;
-    margin: 6px 0px 0 7px;
-  }
   position: relative;
   padding: 2em 0;
   margin-top: 2em;
@@ -34,6 +24,22 @@ headerh1 {
     height: 100%;
     width: 5px;
     background: #d7e4ed;
+    background: -moz-linear-gradient(top, rgba(215, 228, 237,0) 0%, rgb(215, 228, 237) 8%, rgb(215, 228, 237) 92%, rgba(215, 228, 237,0) 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(30,87,153,1)), color-stop(100%,rgba(125,185,232,1)));
+    background: -webkit-linear-gradient(top, rgba(215, 228, 237,0) 0%, rgb(215, 228, 237) 8%, rgb(215, 228, 237) 92%, rgba(215, 228, 237,0) 100%);
+    background: -o-linear-gradient(top, rgba(215, 228, 237,0) 0%, rgb(215, 228, 237) 8%, rgb(215, 228, 237) 92%, rgba(215, 228, 237,0) 100%);
+    background: -ms-linear-gradient(top, rgba(215, 228, 237,0) 0%, rgb(215, 228, 237) 8%, rgb(215, 228, 237) 92%, rgba(215, 228, 237,0) 100%);
+    background: linear-gradient(to bottom, rgba(215, 228, 237,0) 0%, rgb(215, 228, 237) 8%, rgb(215, 228, 237) 92%, rgba(215, 228, 237,0) 100%);
+  }
+  .erac_logo {
+    min-height: 30px;
+    min-width: 35px;
+    margin-left: -19px;
+  }
+  .fa-gmu {
+    color: white;
+    font-size: 1.5em;
+    margin: 6px 0px 0 7px;
   }
 }
 
@@ -82,8 +88,12 @@ headerh1 {
   }
 }
 
+.jbs-bubble {
+  background: #eee;
+}
+
 .ga-bubble {
-  color: black !important;
+  color: #000 !important;
 }
 
 .ghost-bubble {
