@@ -291,17 +291,31 @@ font-size: 1.2em;
   -moz-transition: all 0.3s;
 }
 
+.projects {
+  color: #cf3b28;
+  margin: 30px auto;
+  padding: 10px 0 25px 0;
+  display: inline-block;
+  letter-spacing: 5px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  &:hover {
+    background: #222;
+    border-bottom: 1px solid #cf3b28;
+    letter-spacing: 6px;
+  }
+}
+
 .about-btn {
   border-bottom: 1px solid #eaeaea;
   background: transparent;
   color: #cf3b28;
   padding: 10px 0 25px 0;
-}
-
-.about-btn:hover {
-  background:#222;
-  letter-spacing: 4px;
-  border-bottom: 1px solid #cf3b28;
+  &:hover{
+    background:#222;
+    letter-spacing: 4px;
+    border-bottom: 1px solid #cf3b28;
+  }
 }
 
 .back-btn {
@@ -310,12 +324,11 @@ font-size: 1.2em;
   border-bottom: 1px solid #222;
   margin: 20px auto;
   display: block;
-}
-
-.back-btn:hover {
-  background: #eaeaea;
-  color: #222;
-  letter-spacing: 5px;
+  &:hover{
+    background: #eaeaea;
+    color: #222;
+    letter-spacing: 5px;
+  }
 }
 
 .sec-B {

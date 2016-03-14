@@ -105,21 +105,6 @@ span.cd-date{
   }
 }
 
-.projects {
-  color: #cf3b28;
-  margin: 30px auto;
-  padding: 10px 0 25px 0;
-  display: inline-block;
-  letter-spacing: 5px;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
-  &:hover {
-    background: #222;
-    border-bottom: 1px solid #cf3b28;
-    letter-spacing: 6px;
-  }
-}
-
 .cd-title {
   position: absolute;
   z-index: 1;
