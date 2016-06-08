@@ -82,13 +82,12 @@
     <div class="left sec-A">
       <div class="projects-container">
         <ul>
+          
           <li class="cd-single-project">
             <div class="cd-title">
               <h2>Tooltip States of America</h2>
               <p>JS Logic + CSS Animations</p>
             </div>
-            <!-- .cd-title -->
-
             <div class="cd-project-info">
               <p data-height="800" data-theme-id="0" data-slug-hash="PqrxbB" data-default-tab="result" data-user="paulkmiller" class="codepen">See the Pen <a href="http://codepen.io/paulkmiller/pen/PqrxbB/">USA. USA. USA.</a> by Paul Miller (<a href="http://codepen.io/paulkmiller">@paulkmiller</a>) on <a href="http://codepen.io">CodePen</a>.</p>
               <p>With this particular project, everything was experimental. I used <a href="http://jqvmap.com">JQVMap</a>, which creates SVG's of world regions you choose. The nice thing about this particular API is how I can use it to give specific states
@@ -98,7 +97,6 @@
                 few states having similar widths and heights, positioning is pretty difficult, making the states you select being those that aren't immediate neighbors in it's current state.</p>
               <p>Before I could really give that a go, the idea was scrapped, and a more traditional approach was used to display the data of the project in question. Now I just tinker with this for fun.</p>
             </div>
-            <!-- .cd-project-info -->
           </li>
 
           <li class="cd-single-project">
@@ -106,14 +104,11 @@
               <h2>My Contact Form</h2>
               <p>Mailgun is incrdible and you should use them</p>
             </div>
-            <!-- .cd-title -->
-
             <div class="cd-project-info">
               <p>
                 This isn't actually done yet. But I'm currently working on it and it's presenting its own challenges. More on this soon! In the meantime, enjoy some quotes from my favorite movies!
               </p>
             </div>
-            <!-- .cd-project-info -->
           </li>
 
           <li class="cd-single-project">
@@ -121,16 +116,17 @@
               <h2>Miller's Automotive</h2>
               <p>"We'll Cheat Ya Right!"</p>
             </div>
-            <!-- .cd-title -->
-
             <div class="cd-project-info">
               <p>
-                <!-- Rails / Bootstrap / Internal AJAX for lightweight content generation
-                     Google Maps
-                -->
+                Using Rack and some in-site AJAX, <a href="millers-automotive.herokuapp.com">I built this site</a> as an exercise to better understand how AJAX can be used without an API. Setting up assets locally for these requests ended up yielding
+                interesting results, like faster overall data-retrieval, at the expense to Bootstraps CSS animations. Whenever the AJAX call is made, new values for the clicked window are calculated, which
+                within this particular design, can shift other elements around in the site to conform to the newly added media. The result was a more-jittery-than-I-expected result. In hindsight, many of these
+                issues could've been resolved by using <code>overflow:auto</code> and changing around how some of the layouts are set.
+              </p>
+              <p>
+                You can view the <a href="https://github.com/pmills88/millers-automotive">Github repo</a> for this site here to see how the AJAX is handled.
               </p>
             </div>
-            <!-- .cd-project-info -->
           </li>
 
           <li class="cd-single-project">
@@ -138,13 +134,21 @@
               <h2>Project CAREERS</h2>
               <p>When static content puts on fancy make-up</p>
             </div>
-            <!-- .cd-title -->
-
             <div class="cd-project-info">
               <p>
-                <!-- Made for WVU / 508 compliance learning experience / fully accessible
-                     Isotope / susy for structure / details on github repo
-               -->
+                Project CAREERS is a website designed to support college students who have a traumatic brain injury (TBI), their family members and caregivers, college advisors, educators, health and rehabilitation providers, military/veterans and advocates,
+                commissioned by West Virginia University. Using <a href="#">Suzy</a> and <a href="#">Breakpoints</a> in conjunction with <a href="#">Isotope</a>, this portal was put together over the course of a month, barring design changes throughout the
+                project.
+              </p>
+              <p>
+                Feature-wise, the site is fully 508 compliant, fully accessible, mobile-friendly, and serves strictly as a web portal for other sites.
+              </p>
+              <p>
+                Given that this site was so light-weight and the design itself wasn't very complicated, this gave me a great opportunity to try out Suzy in conjuction with Breakpoitns, as I mentioned before. Whenever I have to build light-weight websites that
+                have no reason to be bogged down by Bootstrap ( on average, you're using 5-10% of it's features while still being forced to load files with the other 90-95% you simply don't use ), this pairing has become my go-to. The only thing that was a bit
+                finnicky was the sticky footer, but like most issues, it was resolved with some meditation with Google and Stack Overflow. Luckily, the support for these two frameworks is excellent, so you'll have little issue finding answers to most problems.
+              </p>
+
             </div>
             <!-- .cd-project-info -->
           </li>
