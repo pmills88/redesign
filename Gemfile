@@ -1,5 +1,4 @@
-# A sample Gemfile
-source "https://rubygems.org"
+source 'https://rubygems.org'
 
-gem 'rack'
+gem 'rack', '~>1.5'
 gem 'vienna'
