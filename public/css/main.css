@@ -42,13 +42,13 @@ headerh1 {
     left: 18px;
     height: 100%;
     width: 4px;
-    background: #d7e4ed;
-    background: -moz-linear-gradient(top, rgba(215, 228, 237, 0) 0%, #d7e4ed 8%, #d7e4ed 92%, rgba(215, 228, 237, 0) 100%);
+    background: #577074;
+    background: -moz-linear-gradient(top, rgba(215, 228, 237, 0) 0%, #577074 8%, #676e6f 92%, rgba(215, 228, 237, 0) 100%);
     background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #1e5799), color-stop(100%, #7db9e8));
-    background: -webkit-linear-gradient(top, rgba(215, 228, 237, 0) 0%, #d7e4ed 8%, #d7e4ed 92%, rgba(215, 228, 237, 0) 100%);
-    background: -o-linear-gradient(top, rgba(215, 228, 237, 0) 0%, #d7e4ed 8%, #d7e4ed 92%, rgba(215, 228, 237, 0) 100%);
-    background: -ms-linear-gradient(top, rgba(215, 228, 237, 0) 0%, #d7e4ed 8%, #d7e4ed 92%, rgba(215, 228, 237, 0) 100%);
-    background: linear-gradient(to bottom, rgba(215, 228, 237, 0) 0%, #d7e4ed 8%, #d7e4ed 92%, rgba(215, 228, 237, 0) 100%); }
+    background: -webkit-linear-gradient(top, rgba(215, 228, 237, 0) 0%, #577074 8%, #676e6f 92%, rgba(215, 228, 237, 0) 100%);
+    background: -o-linear-gradient(top, rgba(215, 228, 237, 0) 0%, #577074 8%, #676e6f 92%, rgba(215, 228, 237, 0) 100%);
+    background: -ms-linear-gradient(top, rgba(215, 228, 237, 0) 0%, #577074 8%, #676e6f 92%, rgba(215, 228, 237, 0) 100%);
+    background: linear-gradient(to bottom, rgba(215, 228, 237, 0) 0%, #577074 8%, #676e6f 92%, rgba(215, 228, 237, 0) 100%); }
   #cd-timeline .erac_logo {
     min-height: 30px;
     min-width: 35px;
@@ -77,7 +77,7 @@ headerh1 {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  box-shadow: 0 0 0 3px white, inset 0 2px 0 rgba(0, 0, 0, 0.08), 0 3px 0 4px rgba(0, 0, 0, 0.05); }
+  box-shadow: 0 0 0 3px #287164, inset 0 2px 0 rgba(0, 0, 0, 0.08), 0 3px 0 4px rgba(0, 0, 0, 0.05); }
   .cd-timeline-img img {
     display: block;
     width: 30px;
@@ -1050,7 +1050,7 @@ a {
     left: auto;
     right: 100%;
     border-color: transparent;
-    border-right-color: white; }
+    border-right-color: #222; }
 
   .cd-timeline-block:nth-child(even) .cd-timeline-content .cd-read-more {
     float: right; }
