@@ -226,7 +226,7 @@
     top: 24px;
     left: 100%;
     border-color: transparent;
-    border-left-color: white;
+    border-left-color: #222;
   }
   .cd-timeline-content .cd-read-more {
     float: left;
@@ -279,7 +279,7 @@
   }
   #cd-timeline::before {
     left: 50%;
-    margin-left: -2px;
+    margin-left: -1px;
   }
   .projects-container .cd-single-project {
     &::after {

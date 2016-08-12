@@ -1,31 +1,24 @@
 @import url(https://fonts.googleapis.com/css?family=Lato:300,400,900);
-h2 a, p a, em {
-  padding: 0.3em 0em 0.2em 0em;
-  margin: 0.3em -0.5em 0.3em -0.5em;
-  border-radius: 50% 3em 50% 3em;
-  color: rgba(0, 0, 0, 0.7);
-  -webkit-box-decoration-break: clone;
-  -o-box-decoration-break: clone;
-  box-decoration-break: clone;
-  margin: 0; }
+.construction {
+  animation: work 0.375s steps(1, start) infinite;
+  font-size: 7px;
+  /* pixel size */
+  height: 1em;
+  margin: 15% auto;
+  width: 1em;
+  /* Remove this is you don't care about a fallback image */
+  box-shadow: inset 0 0 0 1em, 1em 0, 2em 0, 3em 0, -1em 1em, 0 1em, 1em 1em, 2em 1em, 3em 1em, 4em 1em, -2em 2em, -1em 2em, 4em 2em, 5em 2em, -3em 3em, -2em 3em, 5em 3em, 6em 3em, -4em 4em, -3em 4em, 6em 4em, 7em 4em, -5em 5em, -4em 5em, 7em 5em, 8em 5em, -6em 6em, -5em 6em, 8em 6em, 9em 6em, -7em 7em, -6em 7em, 0 7em, 1em 7em, 2em 7em, 3em 7em, 9em 7em, 10em 7em, -8em 8em, -7em 8em, -1em 8em, 0 8em, 1em 8em, 2em 8em, 3em 8em, 4em 8em, 10em 8em, 11em 8em, -9em 9em, -8em 9em, -1em 9em, 0 9em, 1em 9em, 2em 9em, 3em 9em, 4em 9em, 11em 9em, 12em 9em, -10em 10em, -9em 10em, -1em 10em, 0 10em, 1em 10em, 2em 10em, 3em 10em, 4em 10em, 12em 10em, 13em 10em, -11em 11em, -10em 11em, -1em 11em, 0 11em, 1em 11em, 2em 11em, 3em 11em, 4em 11em, 13em 11em, 14em 11em, -12em 12em, -11em 12em, -8em 12em, -7em 12em, -6em 12em, -5em 12em, -4em 12em, -3em 12em, -2em 12em, 0 12em, 1em 12em, 2em 12em, 3em 12em, 14em 12em, 15em 12em, -13em 13em, -12em 13em, -8em 13em, -4em 13em, -3em 13em, -2em 13em, -1em 13em, 15em 13em, 16em 13em, -14em 14em, -13em 14em, -7em 14em, -5em 14em, -4em 14em, -3em 14em, -2em 14em, -1em 14em, 0 14em, 16em 14em, 17em 14em, -15em 15em, -14em 15em, -7em 15em, -6em 15em, -5em 15em, -4em 15em, -3em 15em, -2em 15em, 0 15em, 17em 15em, 18em 15em, -16em 16em, -15em 16em, -7em 16em, -6em 16em, -5em 16em, -4em 16em, -3em 16em, 0 16em, 18em 16em, 19em 16em, -17em 17em, -16em 17em, -8em 17em, -7em 17em, -6em 17em, -5em 17em, -4em 17em, -3em 17em, 0 17em, 19em 17em, 20em 17em, -17em 18em, -16em 18em, -8em 18em, -7em 18em, -6em 18em, -5em 18em, -4em 18em, -2em 18em, 0 18em, 19em 18em, 20em 18em, -17em 19em, -16em 19em, -8em 19em, -7em 19em, -6em 19em, -5em 19em, -4em 19em, -1em 19em, 0 19em, 19em 19em, 20em 19em, -17em 20em, -16em 20em, -8em 20em, -7em 20em, -6em 20em, -5em 20em, -4em 20em, -3em 20em, 0 20em, 19em 20em, 20em 20em, -16em 21em, -15em 21em, -8em 21em, -7em 21em, -6em 21em, -5em 21em, -4em 21em, -3em 21em, -2em 21em, 1em 21em, 18em 21em, 19em 21em, -15em 22em, -14em 22em, -8em 22em, -7em 22em, -6em 22em, -4em 22em, -3em 22em, -2em 22em, -1em 22em, 2em 22em, 17em 22em, 18em 22em, -14em 23em, -13em 23em, -8em 23em, -7em 23em, -6em 23em, -3em 23em, -2em 23em, -1em 23em, 3em 23em, 16em 23em, 17em 23em, -13em 24em, -12em 24em, -8em 24em, -7em 24em, -6em 24em, -3em 24em, -2em 24em, -1em 24em, 4em 24em, 5em 24em, 6em 24em, 15em 24em, 16em 24em, -12em 25em, -11em 25em, -8em 25em, -7em 25em, -6em 25em, -3em 25em, -2em 25em, -1em 25em, 4em 25em, 5em 25em, 6em 25em, 7em 25em, 14em 25em, 15em 25em, -11em 26em, -10em 26em, -8em 26em, -7em 26em, -6em 26em, -3em 26em, -2em 26em, 3em 26em, 4em 26em, 5em 26em, 6em 26em, 7em 26em, 8em 26em, 13em 26em, 14em 26em, -10em 27em, -9em 27em, -7em 27em, -6em 27em, -3em 27em, -2em 27em, -1em 27em, 2em 27em, 3em 27em, 4em 27em, 5em 27em, 6em 27em, 7em 27em, 8em 27em, 9em 27em, 12em 27em, 13em 27em, -9em 28em, -8em 28em, -6em 28em, -3em 28em, -2em 28em, -1em 28em, 2em 28em, 3em 28em, 4em 28em, 5em 28em, 6em 28em, 7em 28em, 8em 28em, 9em 28em, 11em 28em, 12em 28em, -8em 29em, -7em 29em, 10em 29em, 11em 29em, -7em 30em, -6em 30em, 9em 30em, 10em 30em, -6em 31em, -5em 31em, 8em 31em, 9em 31em, -5em 32em, -4em 32em, 7em 32em, 8em 32em, -4em 33em, -3em 33em, 6em 33em, 7em 33em, -3em 34em, -2em 34em, 5em 34em, 6em 34em, -2em 35em, -1em 35em, 4em 35em, 5em 35em, -1em 36em, 0 36em, 1em 36em, 2em 36em, 3em 36em, 4em 36em, 0 37em, 1em 37em, 2em 37em, 3em 37em; }
 
-h2 a, p a {
-  background: -webkit-linear-gradient(rgba(227, 221, 36, 0.15), rgba(227, 221, 36, 0.6), rgba(196, 191, 22, 0.6), rgba(227, 221, 36, 0.24));
-  background: linear-gradient(rgba(227, 221, 36, 0.15), rgba(227, 221, 36, 0.6), rgba(196, 191, 22, 0.6), rgba(227, 221, 36, 0.24));
-  border-right: solid 0.5em rgba(196, 191, 22, 0.15);
-  border-left: solid 0.5em rgba(227, 221, 36, 0.3);
-  text-decoration: none; }
-
-h2 a:hover, h2 a:active, p a:hover, p a:active {
-  color: rgba(0, 0, 0, 0.9); }
-
-em {
-  background: -webkit-linear-gradient(rgba(167, 255, 135, 0.2), rgba(68, 219, 13, 0.55), rgba(41, 150, 10, 0.4), rgba(167, 255, 135, 0.2));
-  background: linear-gradient(rgba(167, 255, 135, 0.2), rgba(68, 219, 13, 0.55), rgba(41, 150, 10, 0.4), rgba(167, 255, 135, 0.2));
-  border-right: solid 0.5em rgba(41, 150, 10, 0.07);
-  border-left: solid 0.5em rgba(68, 219, 13, 0.2);
-  font-style: normal; }
-
+/* Animation */
+@keyframes work {
+  25% {
+    box-shadow: inset 0 0 0 1em, 1em 0, 2em 0, 3em 0, -1em 1em, 0 1em, 1em 1em, 2em 1em, 3em 1em, 4em 1em, -2em 2em, -1em 2em, 4em 2em, 5em 2em, -3em 3em, -2em 3em, 5em 3em, 6em 3em, -4em 4em, -3em 4em, 6em 4em, 7em 4em, -5em 5em, -4em 5em, 7em 5em, 8em 5em, -6em 6em, -5em 6em, 8em 6em, 9em 6em, -7em 7em, -6em 7em, 0 7em, 1em 7em, 2em 7em, 3em 7em, 9em 7em, 10em 7em, -8em 8em, -7em 8em, -1em 8em, 0 8em, 1em 8em, 2em 8em, 3em 8em, 4em 8em, 10em 8em, 11em 8em, -9em 9em, -8em 9em, -1em 9em, 0 9em, 1em 9em, 2em 9em, 3em 9em, 4em 9em, 11em 9em, 12em 9em, -10em 10em, -9em 10em, -1em 10em, 0 10em, 1em 10em, 2em 10em, 3em 10em, 4em 10em, 12em 10em, 13em 10em, -11em 11em, -10em 11em, -1em 11em, 0 11em, 1em 11em, 2em 11em, 3em 11em, 4em 11em, 13em 11em, 14em 11em, -12em 12em, -11em 12em, -8em 12em, -7em 12em, -6em 12em, -5em 12em, -4em 12em, -3em 12em, -2em 12em, 0 12em, 1em 12em, 2em 12em, 3em 12em, 14em 12em, 15em 12em, -13em 13em, -12em 13em, -8em 13em, -4em 13em, -3em 13em, -2em 13em, -1em 13em, 15em 13em, 16em 13em, -14em 14em, -13em 14em, -7em 14em, -5em 14em, -4em 14em, -3em 14em, -2em 14em, -1em 14em, 0 14em, 16em 14em, 17em 14em, -15em 15em, -14em 15em, -7em 15em, -6em 15em, -5em 15em, -4em 15em, -3em 15em, -2em 15em, 0 15em, 17em 15em, 18em 15em, -16em 16em, -15em 16em, -7em 16em, -6em 16em, -5em 16em, -4em 16em, -3em 16em, 0 16em, 18em 16em, 19em 16em, -17em 17em, -16em 17em, -8em 17em, -7em 17em, -6em 17em, -5em 17em, -4em 17em, -3em 17em, 0 17em, 19em 17em, 20em 17em, -17em 18em, -16em 18em, -8em 18em, -7em 18em, -6em 18em, -5em 18em, -4em 18em, -2em 18em, 0 18em, 19em 18em, 20em 18em, -17em 19em, -16em 19em, -8em 19em, -7em 19em, -6em 19em, -5em 19em, -4em 19em, -1em 19em, 0 19em, 19em 19em, 20em 19em, -17em 20em, -16em 20em, -8em 20em, -7em 20em, -6em 20em, -5em 20em, -4em 20em, -3em 20em, 0 20em, 19em 20em, 20em 20em, -16em 21em, -15em 21em, -8em 21em, -7em 21em, -6em 21em, -5em 21em, -4em 21em, -3em 21em, -2em 21em, 1em 21em, 18em 21em, 19em 21em, -15em 22em, -14em 22em, -8em 22em, -7em 22em, -6em 22em, -4em 22em, -3em 22em, -2em 22em, -1em 22em, 2em 22em, 17em 22em, 18em 22em, -14em 23em, -13em 23em, -8em 23em, -7em 23em, -6em 23em, -3em 23em, -2em 23em, -1em 23em, 3em 23em, 16em 23em, 17em 23em, -13em 24em, -12em 24em, -8em 24em, -7em 24em, -6em 24em, -3em 24em, -2em 24em, -1em 24em, 4em 24em, 5em 24em, 6em 24em, 15em 24em, 16em 24em, -12em 25em, -11em 25em, -8em 25em, -7em 25em, -6em 25em, -3em 25em, -2em 25em, -1em 25em, 4em 25em, 5em 25em, 6em 25em, 7em 25em, 14em 25em, 15em 25em, -11em 26em, -10em 26em, -8em 26em, -7em 26em, -6em 26em, -3em 26em, -2em 26em, 3em 26em, 4em 26em, 5em 26em, 6em 26em, 7em 26em, 8em 26em, 13em 26em, 14em 26em, -10em 27em, -9em 27em, -7em 27em, -6em 27em, -3em 27em, -2em 27em, -1em 27em, 2em 27em, 3em 27em, 4em 27em, 5em 27em, 6em 27em, 7em 27em, 8em 27em, 9em 27em, 12em 27em, 13em 27em, -9em 28em, -8em 28em, -6em 28em, -3em 28em, -2em 28em, -1em 28em, 2em 28em, 3em 28em, 4em 28em, 5em 28em, 6em 28em, 7em 28em, 8em 28em, 9em 28em, 11em 28em, 12em 28em, -8em 29em, -7em 29em, 10em 29em, 11em 29em, -7em 30em, -6em 30em, 9em 30em, 10em 30em, -6em 31em, -5em 31em, 8em 31em, 9em 31em, -5em 32em, -4em 32em, 7em 32em, 8em 32em, -4em 33em, -3em 33em, 6em 33em, 7em 33em, -3em 34em, -2em 34em, 5em 34em, 6em 34em, -2em 35em, -1em 35em, 4em 35em, 5em 35em, -1em 36em, 0 36em, 1em 36em, 2em 36em, 3em 36em, 4em 36em, 0 37em, 1em 37em, 2em 37em, 3em 37em; }
+  50% {
+    box-shadow: inset 0 0 0 1em, 1em 0, 2em 0, 3em 0, -1em 1em, 0 1em, 1em 1em, 2em 1em, 3em 1em, 4em 1em, -2em 2em, -1em 2em, 4em 2em, 5em 2em, -3em 3em, -2em 3em, 5em 3em, 6em 3em, -4em 4em, -3em 4em, 6em 4em, 7em 4em, -5em 5em, -4em 5em, 7em 5em, 8em 5em, -6em 6em, -5em 6em, 8em 6em, 9em 6em, -7em 7em, -6em 7em, 0 7em, 1em 7em, 2em 7em, 3em 7em, 9em 7em, 10em 7em, -8em 8em, -7em 8em, -1em 8em, 0 8em, 1em 8em, 2em 8em, 3em 8em, 4em 8em, 10em 8em, 11em 8em, -9em 9em, -8em 9em, -1em 9em, 0 9em, 1em 9em, 2em 9em, 3em 9em, 4em 9em, 11em 9em, 12em 9em, -10em 10em, -9em 10em, -1em 10em, 0 10em, 1em 10em, 2em 10em, 3em 10em, 4em 10em, 12em 10em, 13em 10em, -11em 11em, -10em 11em, -1em 11em, 0 11em, 1em 11em, 2em 11em, 3em 11em, 4em 11em, 13em 11em, 14em 11em, -12em 12em, -11em 12em, -9em 12em, -8em 12em, -7em 12em, -6em 12em, -5em 12em, -4em 12em, -3em 12em, -2em 12em, 0 12em, 1em 12em, 2em 12em, 3em 12em, 14em 12em, 15em 12em, -13em 13em, -12em 13em, -9em 13em, -4em 13em, -3em 13em, -2em 13em, -1em 13em, 15em 13em, 16em 13em, -14em 14em, -13em 14em, -8em 14em, -5em 14em, -4em 14em, -3em 14em, -2em 14em, -1em 14em, 0 14em, 16em 14em, 17em 14em, -15em 15em, -14em 15em, -7em 15em, -6em 15em, -5em 15em, -4em 15em, -3em 15em, -2em 15em, 0 15em, 17em 15em, 18em 15em, -16em 16em, -15em 16em, -7em 16em, -6em 16em, -5em 16em, -4em 16em, -3em 16em, 0 16em, 18em 16em, 19em 16em, -17em 17em, -16em 17em, -8em 17em, -7em 17em, -6em 17em, -5em 17em, -4em 17em, -2em 17em, 0 17em, 19em 17em, 20em 17em, -17em 18em, -16em 18em, -8em 18em, -7em 18em, -6em 18em, -5em 18em, -4em 18em, -1em 18em, 0 18em, 19em 18em, 20em 18em, -17em 19em, -16em 19em, -8em 19em, -7em 19em, -6em 19em, -5em 19em, -4em 19em, 1em 19em, 19em 19em, 20em 19em, -17em 20em, -16em 20em, -8em 20em, -7em 20em, -6em 20em, -5em 20em, -4em 20em, -3em 20em, 2em 20em, 19em 20em, 20em 20em, -16em 21em, -15em 21em, -8em 21em, -7em 21em, -6em 21em, -5em 21em, -4em 21em, -3em 21em, -2em 21em, 3em 21em, 18em 21em, 19em 21em, -15em 22em, -14em 22em, -8em 22em, -7em 22em, -6em 22em, -4em 22em, -3em 22em, -2em 22em, -1em 22em, 4em 22em, 5em 22em, 6em 22em, 7em 22em, 17em 22em, 18em 22em, -14em 23em, -13em 23em, -8em 23em, -7em 23em, -6em 23em, -3em 23em, -2em 23em, -1em 23em, 4em 23em, 5em 23em, 6em 23em, 7em 23em, 8em 23em, 16em 23em, 17em 23em, -13em 24em, -12em 24em, -8em 24em, -7em 24em, -6em 24em, -3em 24em, -2em 24em, -1em 24em, 4em 24em, 5em 24em, 6em 24em, 7em 24em, 8em 24em, 15em 24em, 16em 24em, -12em 25em, -11em 25em, -8em 25em, -7em 25em, -6em 25em, -3em 25em, -2em 25em, -1em 25em, 4em 25em, 5em 25em, 6em 25em, 7em 25em, 8em 25em, 14em 25em, 15em 25em, -11em 26em, -10em 26em, -8em 26em, -7em 26em, -6em 26em, -3em 26em, -2em 26em, 3em 26em, 4em 26em, 5em 26em, 6em 26em, 7em 26em, 8em 26em, 13em 26em, 14em 26em, -10em 27em, -9em 27em, -7em 27em, -6em 27em, -3em 27em, -2em 27em, -1em 27em, 2em 27em, 3em 27em, 4em 27em, 5em 27em, 6em 27em, 7em 27em, 8em 27em, 9em 27em, 12em 27em, 13em 27em, -9em 28em, -8em 28em, -6em 28em, -3em 28em, -2em 28em, -1em 28em, 2em 28em, 3em 28em, 4em 28em, 5em 28em, 6em 28em, 7em 28em, 8em 28em, 9em 28em, 11em 28em, 12em 28em, -8em 29em, -7em 29em, 10em 29em, 11em 29em, -7em 30em, -6em 30em, 9em 30em, 10em 30em, -6em 31em, -5em 31em, 8em 31em, 9em 31em, -5em 32em, -4em 32em, 7em 32em, 8em 32em, -4em 33em, -3em 33em, 6em 33em, 7em 33em, -3em 34em, -2em 34em, 5em 34em, 6em 34em, -2em 35em, -1em 35em, 4em 35em, 5em 35em, -1em 36em, 0 36em, 1em 36em, 2em 36em, 3em 36em, 4em 36em, 0 37em, 1em 37em, 2em 37em, 3em 37em; }
+  75% {
+    box-shadow: inset 0 0 0 1em, 1em 0, 2em 0, 3em 0, -1em 1em, 0 1em, 1em 1em, 2em 1em, 3em 1em, 4em 1em, -2em 2em, -1em 2em, 4em 2em, 5em 2em, -3em 3em, -2em 3em, 5em 3em, 6em 3em, -4em 4em, -3em 4em, 6em 4em, 7em 4em, -5em 5em, -4em 5em, 7em 5em, 8em 5em, -6em 6em, -5em 6em, 8em 6em, 9em 6em, -7em 7em, -6em 7em, 0 7em, 1em 7em, 2em 7em, 3em 7em, 9em 7em, 10em 7em, -8em 8em, -7em 8em, -1em 8em, 0 8em, 1em 8em, 2em 8em, 3em 8em, 4em 8em, 10em 8em, 11em 8em, -9em 9em, -8em 9em, -1em 9em, 0 9em, 1em 9em, 2em 9em, 3em 9em, 4em 9em, 11em 9em, 12em 9em, -10em 10em, -9em 10em, -1em 10em, 0 10em, 1em 10em, 2em 10em, 3em 10em, 4em 10em, 12em 10em, 13em 10em, -11em 11em, -10em 11em, -1em 11em, 0 11em, 1em 11em, 2em 11em, 3em 11em, 4em 11em, 13em 11em, 14em 11em, -12em 12em, -11em 12em, -9em 12em, -8em 12em, -7em 12em, -6em 12em, -5em 12em, -4em 12em, -3em 12em, -2em 12em, 0 12em, 1em 12em, 2em 12em, 3em 12em, 14em 12em, 15em 12em, -13em 13em, -12em 13em, -9em 13em, -4em 13em, -3em 13em, -2em 13em, -1em 13em, 15em 13em, 16em 13em, -14em 14em, -13em 14em, -9em 14em, -5em 14em, -4em 14em, -3em 14em, -2em 14em, -1em 14em, 0 14em, 16em 14em, 17em 14em, -15em 15em, -14em 15em, -9em 15em, -7em 15em, -6em 15em, -5em 15em, -4em 15em, -3em 15em, -2em 15em, 0 15em, 17em 15em, 18em 15em, -16em 16em, -15em 16em, -9em 16em, -8em 16em, -7em 16em, -6em 16em, -5em 16em, -4em 16em, -3em 16em, 0 16em, 18em 16em, 19em 16em, -17em 17em, -16em 17em, -8em 17em, -7em 17em, -6em 17em, -5em 17em, -4em 17em, 0 17em, 19em 17em, 20em 17em, -17em 18em, -16em 18em, -8em 18em, -7em 18em, -6em 18em, -5em 18em, -4em 18em, -3em 18em, -2em 18em, 0 18em, 6em 18em, 7em 18em, 19em 18em, 20em 18em, -17em 19em, -16em 19em, -8em 19em, -7em 19em, -6em 19em, -5em 19em, -4em 19em, -1em 19em, 0 19em, 1em 19em, 5em 19em, 6em 19em, 7em 19em, 8em 19em, 19em 19em, 20em 19em, -17em 20em, -16em 20em, -8em 20em, -7em 20em, -6em 20em, -5em 20em, -4em 20em, -3em 20em, 2em 20em, 3em 20em, 4em 20em, 5em 20em, 6em 20em, 7em 20em, 8em 20em, 9em 20em, 19em 20em, 20em 20em, -16em 21em, -15em 21em, -8em 21em, -7em 21em, -6em 21em, -5em 21em, -4em 21em, -3em 21em, -2em 21em, 4em 21em, 5em 21em, 6em 21em, 7em 21em, 8em 21em, 9em 21em, 18em 21em, 19em 21em, -15em 22em, -14em 22em, -8em 22em, -7em 22em, -6em 22em, -4em 22em, -3em 22em, -2em 22em, -1em 22em, 4em 22em, 5em 22em, 6em 22em, 7em 22em, 8em 22em, 9em 22em, 17em 22em, 18em 22em, -14em 23em, -13em 23em, -8em 23em, -7em 23em, -6em 23em, -3em 23em, -2em 23em, -1em 23em, 7em 23em, 8em 23em, 9em 23em, 16em 23em, 17em 23em, -13em 24em, -12em 24em, -8em 24em, -7em 24em, -6em 24em, -3em 24em, -2em 24em, -1em 24em, 5em 24em, 6em 24em, 15em 24em, 16em 24em, -12em 25em, -11em 25em, -8em 25em, -7em 25em, -6em 25em, -3em 25em, -2em 25em, -1em 25em, 4em 25em, 5em 25em, 6em 25em, 7em 25em, 14em 25em, 15em 25em, -11em 26em, -10em 26em, -8em 26em, -7em 26em, -6em 26em, -3em 26em, -2em 26em, 3em 26em, 4em 26em, 5em 26em, 6em 26em, 7em 26em, 8em 26em, 13em 26em, 14em 26em, -10em 27em, -9em 27em, -7em 27em, -6em 27em, -3em 27em, -2em 27em, -1em 27em, 2em 27em, 3em 27em, 4em 27em, 5em 27em, 6em 27em, 7em 27em, 8em 27em, 9em 27em, 12em 27em, 13em 27em, -9em 28em, -8em 28em, -6em 28em, -3em 28em, -2em 28em, -1em 28em, 2em 28em, 3em 28em, 4em 28em, 5em 28em, 6em 28em, 7em 28em, 8em 28em, 9em 28em, 11em 28em, 12em 28em, -8em 29em, -7em 29em, 10em 29em, 11em 29em, -7em 30em, -6em 30em, 9em 30em, 10em 30em, -6em 31em, -5em 31em, 8em 31em, 9em 31em, -5em 32em, -4em 32em, 7em 32em, 8em 32em, -4em 33em, -3em 33em, 6em 33em, 7em 33em, -3em 34em, -2em 34em, 5em 34em, 6em 34em, -2em 35em, -1em 35em, 4em 35em, 5em 35em, -1em 36em, 0 36em, 1em 36em, 2em 36em, 3em 36em, 4em 36em, 0 37em, 1em 37em, 2em 37em, 3em 37em; }
+  100% {
+    box-shadow: inset 0 0 0 1em, 1em 0, 2em 0, 3em 0, -1em 1em, 0 1em, 1em 1em, 2em 1em, 3em 1em, 4em 1em, -2em 2em, -1em 2em, 4em 2em, 5em 2em, -3em 3em, -2em 3em, 5em 3em, 6em 3em, -4em 4em, -3em 4em, 6em 4em, 7em 4em, -5em 5em, -4em 5em, 7em 5em, 8em 5em, -6em 6em, -5em 6em, 8em 6em, 9em 6em, -7em 7em, -6em 7em, 0 7em, 1em 7em, 2em 7em, 3em 7em, 9em 7em, 10em 7em, -8em 8em, -7em 8em, -1em 8em, 0 8em, 1em 8em, 2em 8em, 3em 8em, 4em 8em, 10em 8em, 11em 8em, -9em 9em, -8em 9em, -1em 9em, 0 9em, 1em 9em, 2em 9em, 3em 9em, 4em 9em, 11em 9em, 12em 9em, -10em 10em, -9em 10em, -1em 10em, 0 10em, 1em 10em, 2em 10em, 3em 10em, 4em 10em, 9em 10em, 10em 10em, 12em 10em, 13em 10em, -11em 11em, -10em 11em, -1em 11em, 0 11em, 1em 11em, 2em 11em, 3em 11em, 4em 11em, 7em 11em, 9em 11em, 10em 11em, 13em 11em, 14em 11em, -12em 12em, -11em 12em, -9em 12em, -8em 12em, -7em 12em, -6em 12em, -5em 12em, -4em 12em, -3em 12em, -2em 12em, 0 12em, 1em 12em, 2em 12em, 3em 12em, 14em 12em, 15em 12em, -13em 13em, -12em 13em, -9em 13em, -4em 13em, -3em 13em, -2em 13em, -1em 13em, 8em 13em, 15em 13em, 16em 13em, -14em 14em, -13em 14em, -9em 14em, -5em 14em, -4em 14em, -3em 14em, -2em 14em, -1em 14em, 0 14em, 8em 14em, 10em 14em, 16em 14em, 17em 14em, -15em 15em, -14em 15em, -9em 15em, -7em 15em, -6em 15em, -5em 15em, -4em 15em, -3em 15em, -2em 15em, 0 15em, 6em 15em, 10em 15em, 17em 15em, 18em 15em, -16em 16em, -15em 16em, -9em 16em, -7em 16em, -6em 16em, -5em 16em, -4em 16em, -3em 16em, 0 16em, 6em 16em, 8em 16em, 18em 16em, 19em 16em, -17em 17em, -16em 17em, -9em 17em, -8em 17em, -7em 17em, -6em 17em, -5em 17em, -4em 17em, 0 17em, 19em 17em, 20em 17em, -17em 18em, -16em 18em, -9em 18em, -8em 18em, -7em 18em, -6em 18em, -5em 18em, -4em 18em, -3em 18em, -2em 18em, -1em 18em, 0 18em, 1em 18em, 2em 18em, 3em 18em, 4em 18em, 5em 18em, 6em 18em, 7em 18em, 8em 18em, 9em 18em, 10em 18em, 11em 18em, 19em 18em, 20em 18em, -17em 19em, -16em 19em, -8em 19em, -7em 19em, -6em 19em, -5em 19em, -4em 19em, 0 19em, 6em 19em, 7em 19em, 8em 19em, 9em 19em, 10em 19em, 19em 19em, 20em 19em, -17em 20em, -16em 20em, -8em 20em, -7em 20em, -6em 20em, -5em 20em, -4em 20em, -3em 20em, 6em 20em, 7em 20em, 8em 20em, 9em 20em, 19em 20em, 20em 20em, -16em 21em, -15em 21em, -8em 21em, -7em 21em, -6em 21em, -5em 21em, -4em 21em, -3em 21em, -2em 21em, 18em 21em, 19em 21em, -15em 22em, -14em 22em, -8em 22em, -7em 22em, -6em 22em, -4em 22em, -3em 22em, -2em 22em, -1em 22em, 17em 22em, 18em 22em, -14em 23em, -13em 23em, -8em 23em, -7em 23em, -6em 23em, -3em 23em, -2em 23em, -1em 23em, 16em 23em, 17em 23em, -13em 24em, -12em 24em, -8em 24em, -7em 24em, -6em 24em, -3em 24em, -2em 24em, -1em 24em, 5em 24em, 6em 24em, 15em 24em, 16em 24em, -12em 25em, -11em 25em, -8em 25em, -7em 25em, -6em 25em, -3em 25em, -2em 25em, -1em 25em, 4em 25em, 5em 25em, 6em 25em, 7em 25em, 14em 25em, 15em 25em, -11em 26em, -10em 26em, -8em 26em, -7em 26em, -6em 26em, -3em 26em, -2em 26em, 3em 26em, 4em 26em, 5em 26em, 6em 26em, 7em 26em, 8em 26em, 13em 26em, 14em 26em, -10em 27em, -9em 27em, -7em 27em, -6em 27em, -3em 27em, -2em 27em, -1em 27em, 2em 27em, 3em 27em, 4em 27em, 5em 27em, 6em 27em, 7em 27em, 8em 27em, 9em 27em, 12em 27em, 13em 27em, -9em 28em, -8em 28em, -6em 28em, -3em 28em, -2em 28em, -1em 28em, 2em 28em, 3em 28em, 4em 28em, 5em 28em, 6em 28em, 7em 28em, 8em 28em, 9em 28em, 11em 28em, 12em 28em, -8em 29em, -7em 29em, 10em 29em, 11em 29em, -7em 30em, -6em 30em, 9em 30em, 10em 30em, -6em 31em, -5em 31em, 8em 31em, 9em 31em, -5em 32em, -4em 32em, 7em 32em, 8em 32em, -4em 33em, -3em 33em, 6em 33em, 7em 33em, -3em 34em, -2em 34em, 5em 34em, 6em 34em, -2em 35em, -1em 35em, 4em 35em, 5em 35em, -1em 36em, 0 36em, 1em 36em, 2em 36em, 3em 36em, 4em 36em, 0 37em, 1em 37em, 2em 37em, 3em 37em; } }
 header {
   height: 200px;
   line-height: 200px;
@@ -48,7 +41,7 @@ headerh1 {
     top: 0;
     left: 18px;
     height: 100%;
-    width: 5px;
+    width: 4px;
     background: #d7e4ed;
     background: -moz-linear-gradient(top, rgba(215, 228, 237, 0) 0%, #d7e4ed 8%, #d7e4ed 92%, rgba(215, 228, 237, 0) 100%);
     background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #1e5799), color-stop(100%, #7db9e8));
@@ -84,7 +77,7 @@ headerh1 {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  box-shadow: 0 0 0 4px white, inset 0 2px 0 rgba(0, 0, 0, 0.08), 0 3px 0 4px rgba(0, 0, 0, 0.05); }
+  box-shadow: 0 0 0 3px white, inset 0 2px 0 rgba(0, 0, 0, 0.08), 0 3px 0 4px rgba(0, 0, 0, 0.05); }
   .cd-timeline-img img {
     display: block;
     width: 30px;
@@ -100,6 +93,9 @@ headerh1 {
     background: #02a15f; }
   .cd-timeline-img.cd-ga {
     background: #ffe039; }
+
+.cd-timeline-top {
+  box-shadow: none; }
 
 .pulse:before, .pulse:after {
   content: '';
@@ -121,11 +117,9 @@ headerh1 {
   0% {
     transform: scale(0.6);
     opacity: 0; }
-
   33% {
     transform: scale(1);
     opacity: 1; }
-
   100% {
     transform: scale(1.4);
     opacity: 0; } }
@@ -158,13 +152,11 @@ i.fa.fa-code {
     -webkit-transform: scale(0.5);
     -ms-transform: scale(0.5);
     transform: scale(0.5); }
-
   60% {
     opacity: 1;
     -webkit-transform: scale(1.2);
     -ms-transform: scale(1.2);
     transform: scale(1.2); }
-
   100% {
     -webkit-transform: scale(1);
     -ms-transform: scale(1);
@@ -175,13 +167,11 @@ i.fa.fa-code {
     -webkit-transform: scale(0.5);
     -ms-transform: scale(0.5);
     transform: scale(0.5); }
-
   60% {
     opacity: 1;
     -webkit-transform: scale(1.2);
     -ms-transform: scale(1.2);
     transform: scale(1.2); }
-
   100% {
     -webkit-transform: scale(1);
     -ms-transform: scale(1);
@@ -189,19 +179,20 @@ i.fa.fa-code {
 .cd-timeline-content {
   position: relative;
   margin-left: 60px;
-  background: white;
+  background: #222;
   border-radius: 0.25em;
   padding: 1em;
-  box-shadow: 0 3px 0 #d7e4ed; }
+  box-shadow: 0 3px 0 #577074; }
   .cd-timeline-content:after {
     content: "";
     display: table;
     clear: both; }
   .cd-timeline-content h2 {
-    color: #303e49; }
+    color: #4b939e; }
     .cd-timeline-content h2 a {
       text-decoration: none; }
   .cd-timeline-content h3 {
+    color: #577074;
     font-size: 0.8em;
     margin: 0.5em 0 0 1em; }
   .cd-timeline-content p, .cd-timeline-content .cd-read-more, .cd-timeline-content .cd-date {
@@ -211,7 +202,8 @@ i.fa.fa-code {
     display: inline-block; }
   .cd-timeline-content p {
     margin: 1em 0;
-    line-height: 1.6; }
+    line-height: 1.6;
+    color: #a59e9d; }
   .cd-timeline-content .cd-read-more {
     float: right;
     padding: 0.8em 1em;
@@ -234,17 +226,15 @@ i.fa.fa-code {
   height: 0;
   width: 0;
   border: 7px solid transparent;
-  border-right: 7px solid white; }
+  border-right: 7px solid #222; }
 
 @-webkit-keyframes cd-bounce-2 {
   0% {
     opacity: 0;
     -webkit-transform: translateX(-100px); }
-
   60% {
     opacity: 1;
     -webkit-transform: translateX(20px); }
-
   100% {
     -webkit-transform: translateX(0); } }
 @keyframes cd-bounce-2 {
@@ -253,13 +243,11 @@ i.fa.fa-code {
     -webkit-transform: translateX(-100px);
     -ms-transform: translateX(-100px);
     transform: translateX(-100px); }
-
   60% {
     opacity: 1;
     -webkit-transform: translateX(20px);
     -ms-transform: translateX(20px);
     transform: translateX(20px); }
-
   100% {
     -webkit-transform: translateX(0);
     -ms-transform: translateX(0);
@@ -268,11 +256,9 @@ i.fa.fa-code {
   0% {
     opacity: 0;
     -webkit-transform: translateX(100px); }
-
   60% {
     opacity: 1;
     -webkit-transform: translateX(-20px); }
-
   100% {
     -webkit-transform: translateX(0); } }
 @keyframes cd-bounce-2-inverse {
@@ -281,13 +267,11 @@ i.fa.fa-code {
     -webkit-transform: translateX(100px);
     -ms-transform: translateX(100px);
     transform: translateX(100px); }
-
   60% {
     opacity: 1;
     -webkit-transform: translateX(-20px);
     -ms-transform: translateX(-20px);
     transform: translateX(-20px); }
-
   100% {
     -webkit-transform: translateX(0);
     -ms-transform: translateX(0);
@@ -539,10 +523,8 @@ span.cd-date {
 @-webkit-keyframes cd-translate {
   0% {
     -webkit-transform: translateX(-50%) scale(1); }
-
   50% {
     -webkit-transform: translateY(10px) translateX(-50%) scale(1); }
-
   100% {
     -webkit-transform: translateX(-50%) scale(1); } }
 @keyframes cd-translate {
@@ -550,12 +532,10 @@ span.cd-date {
     -webkit-transform: translateX(-50%) scale(1);
     -ms-transform: translateX(-50%) scale(1);
     transform: translateX(-50%) scale(1); }
-
   50% {
     -webkit-transform: translateY(10px) translateX(-50%) scale(1);
     -ms-transform: translateY(10px) translateX(-50%) scale(1);
     transform: translateY(10px) translateX(-50%) scale(1); }
-
   100% {
     -webkit-transform: translateX(-50%) scale(1);
     -ms-transform: translateX(-50%) scale(1);
@@ -570,8 +550,12 @@ html, body {
 *, *:after, *:before {
   box-sizing: border-box; }
 
+a {
+  text-decoration: none;
+  color: #cf3b28; }
+
 #cd-timeline span.cd-date {
-  color: #000; }
+  color: #eaeaea; }
 
 .cd-title h2 {
   font-size: 1.2em; }
@@ -847,7 +831,7 @@ html, body {
     letter-spacing: 5px; }
 
 .sec-B {
-  background: #7f8c97; }
+  background: #3B3738; }
 
 @media only screen and (min-width: 768px) {
   .cd-timeline-content h2 {
@@ -1045,7 +1029,7 @@ html, body {
     top: 24px;
     left: 100%;
     border-color: transparent;
-    border-left-color: white; }
+    border-left-color: #222; }
 
   .cd-timeline-content .cd-read-more {
     float: left; }
@@ -1098,7 +1082,7 @@ html, body {
 
   #cd-timeline::before {
     left: 50%;
-    margin-left: -2px; }
+    margin-left: -1px; }
 
   .projects-container .cd-single-project::after {
     background-attachment: fixed;
@@ -1126,3 +1110,5 @@ html, body {
   .cssanimations .cd-timeline-block:nth-child(even) .cd-timeline-content.bounce-in {
     -webkit-animation: cd-bounce-2-inverse 0.6s;
     animation: cd-bounce-2-inverse 0.6s; } }
+
+/*# sourceMappingURL=main.css.map */

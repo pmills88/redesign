@@ -11,8 +11,13 @@ html,body {
   box-sizing: border-box;
 }
 
+a{
+  text-decoration: none;
+    color: #cf3b28;
+}
+
 #cd-timeline span.cd-date {
-  color: #000;
+  color: #eaeaea;
 }
 
 .cd-title h2 {
@@ -332,5 +337,5 @@ font-size: 1.2em;
 }
 
 .sec-B {
-  background: #7f8c97;
+  background: #3B3738;
 }
