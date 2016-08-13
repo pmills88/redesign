@@ -187,6 +187,9 @@ i.fa.fa-code {
     content: "";
     display: table;
     clear: both; }
+  .cd-timeline-content .content-header {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    padding-bottom: 1em; }
   .cd-timeline-content h2 {
     color: #4b939e;
     line-height: 1.2em; }
