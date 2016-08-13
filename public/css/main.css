@@ -188,7 +188,8 @@ i.fa.fa-code {
     display: table;
     clear: both; }
   .cd-timeline-content h2 {
-    color: #4b939e; }
+    color: #4b939e;
+    line-height: 1.2em; }
     .cd-timeline-content h2 a {
       text-decoration: none; }
   .cd-timeline-content h3 {
