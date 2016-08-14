@@ -710,7 +710,8 @@ a {
     font-size: 19px;
     letter-spacing: 0.5px;
     margin: 20px;
-    line-height: normal; }
+    line-height: normal;
+    padding: 1em; }
   .intro h5 {
     font-weight: 900;
     color: #1e1e1e;
