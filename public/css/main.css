@@ -300,7 +300,6 @@ span.cd-date {
   position: relative;
   overflow-x: hidden;
   -webkit-overflow-scrolling: touch;
-  background-color: #3B3738;
   color: #fff; }
   .projects-container::before {
     content: 'mobile';
@@ -683,7 +682,7 @@ a {
   width: 100vw; }
 
 .intro {
-  background: #333;
+  background: #3a3433;
   color: #eaeaea;
   text-align: center;
   display: table;
@@ -780,9 +779,11 @@ a {
     letter-spacing: 5px;
     line-height: 45px; }
 
-.sec-A h1 {
-  color: #cf3b28;
-  border-bottom: 1px solid #cf3b28; }
+.sec-A {
+  background-color: #313131; }
+  .sec-A h1 {
+    color: #cf3b28;
+    border-bottom: 1px solid #cf3b28; }
 
 .sub-btn {
   margin: 20px;
@@ -836,7 +837,7 @@ a {
     letter-spacing: 5px; }
 
 .sec-B {
-  background: #3B3738; }
+  background: #2d2c32; }
 
 @media only screen and (min-width: 768px) {
   .cd-timeline-content h2 {
