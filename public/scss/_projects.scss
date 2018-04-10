@@ -1,3 +1,168 @@
+//projects start
+
+
+.card-header {
+  align-items: stretch;
+  box-shadow: 0 1px 2px rgba(10, 10, 10, 0.1);
+  display: flex;
+  min-height: 40px;
+}
+
+.card-header-title {
+  align-items: flex-start;
+  color: #363636;
+  display: flex;
+  flex-grow: 1;
+  font-weight: bold;
+  padding: 10px;
+}
+
+.card-header-icon {
+  align-items: center;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  width: 40px;
+}
+
+.card-image {
+  display: block;
+  position: relative;
+}
+
+.card-content {
+  padding: 20px;
+  .title + .subtitle {
+    margin-top: -20px;
+  }
+}
+
+.card-footer {
+  border-top: 1px solid #dbdbdb;
+  align-items: stretch;
+  display: flex;
+}
+
+.card-footer-item {
+  align-items: center;
+  display: flex;
+  flex-grow: 1;
+  justify-content: center;
+  padding: 10px;
+  &:not(:last-child) {
+    border-right: 1px solid #dbdbdb;
+  }
+}
+
+.card {
+  background-color: white;
+  box-shadow: 0 2px 3px rgba(10, 10, 10, 0.1), 0 0 0 1px rgba(10, 10, 10, 0.1);
+  color: #EEE;
+  max-width: 100%;
+  position: relative;
+  width: 300px;
+  .media:not(:last-child) {
+    margin-bottom: 10px;
+  }
+  &.is-fullwidth {
+    width: 100%;
+  }
+  &.is-rounded {
+    border-radius: 5px;
+  }
+}
+
+#projects .card {
+  border-radius: 2px;
+  margin: 25px 0;
+  text-align: left;
+  background: rgba(25, 25, 25, 0.3);
+  display: inline-block;
+  a {
+    color: #EEE;
+  }
+  img {
+    border-top-right-radius: 2px;
+    border-top-left-radius: 2px;
+  }
+  .title {
+    color: #06cbf6;
+    text-transform: none;
+  }
+  .subtitle {
+    color: #dddddd;
+    font-size: 10px;
+    font-style: italic;
+    letter-spacing: 0.05em;
+  }
+  .content {
+    li + li {
+      margin: 0;
+    }
+    font-size: 14px;
+  }
+  ul {
+    padding: 0;
+    list-style-type: none;
+    margin: 10px 0;
+  }
+  .tech-used {
+    margin: 4px 5px 8px 0;
+    padding: 1px 5px;
+    border: 1px solid #007888;
+    border-radius: 2px;
+    display: inline-block;
+  }
+  .btn-container {
+    width: 100%;
+    text-align: center;
+    a {
+      border: none;
+    }
+    .btn-view-proj {
+      margin-top: 15px;
+      font-size: 14px;
+      width: 100%;
+      color: #EEE;
+      border-radius: 2px;
+      background: none;
+      border: 1px solid #06cbf6;
+      padding: 10px 15px;
+      -webkit-transition: all 0.2s;
+      transition: all 0.2s;
+      &:hover {
+        color: #FEFEFE;
+        cursor: pointer;
+        transform: scale(1.025);
+        border-color: #048dab;
+        background: -moz-linear-gradient(-45deg, #048dab 0%, #047992 100%, #048dab 100%);
+        background: -webkit-linear-gradient(-45deg, #048dab 0%, #047992 100%, #048dab 100%);
+        background: linear-gradient(135deg, #048dab 0%, #047992 100%, #048dab 100%);
+      }
+      &:active {
+        background: -moz-linear-gradient(-45deg, #03647a 0%, #025061 100%, #03647a 100%);
+        background: -webkit-linear-gradient(-45deg, #047992 0%, #025061 100%, #047992 100%);
+        background: linear-gradient(135deg, #03647a 0%, #025061 100%, #03647a 100%);
+      }
+      &:focus, &:active {
+        outline: 0;
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  #projects .card {
+    margin: 20px 20px;
+  }
+}
+
+@media (min-width: 1000px) {
+  #projects .card {
+    margin: 35px 20px;
+  }
+}
+
 .cd-container {
   /* this class is used to give a max-width to the element it is applied to, and center it horizontally when it reaches that max-width */
   width: 90%;
@@ -23,84 +188,6 @@ span.cd-date{
   &::before {
     content: 'mobile';
     display: none;
-  }
-  .cd-single-project {
-    width: 100%;
-    height: 25vh;  // switching to vh until I figure out what the actual fuck happened to 25% not being calculated from the parent element
-    overflow: hidden;
-    cursor: pointer;
-    -webkit-transition: -webkit-transform 0.4s;
-    transition: transform 0.4s;
-    /* on mobile -  move items outside the viewport */
-    -webkit-transform: translateX(-100%);
-    -ms-transform: translateX(-100%);
-    transform: translateX(-100%);
-    &::after {
-      /* background image */
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      height: 100%;
-      width: 100%;
-      background-image: url("../assets/img-1-small.jpg");
-      background-repeat: no-repeat;
-      background-position: center center;
-      background-size: cover;
-      -webkit-transition: opacity 0.5s, height 0.4s;
-      transition: opacity 0.5s, height 0.4s;
-    }
-    &::before {
-      /* never visible - this is used in jQuery to detect if the background image has been loaded  */
-      content: '../assets/img-1-small.jpg';
-      display: none;
-    }
-    &:nth-of-type(2) {
-      top: 25vh;
-      &::after {
-        background-image: url("../assets/img-2-small.jpg");
-      }
-      &::before {
-        content: '../assets/img-2-small.jpg';
-      }
-    }
-    &:nth-of-type(3) {
-      top: 50vh;
-      &::after {
-        background-image: url("../assets/img-3-small.jpg");
-      }
-      &::before {
-        content: '../assets/img-3-small.jpg';
-      }
-    }
-    &:nth-of-type(4) {
-      top: 75vh;
-      &::after {
-        background-image: url("../assets/img-4-small.jpg");
-      }
-      &::before {
-        content: '../assets/img-4-small.jpg';
-      }
-    }
-    &.is-loaded {
-      /* move items in the viewport when background images have been loaded */
-      -webkit-transform: translateX(0);
-      -ms-transform: translateX(0);
-      transform: translateX(0);
-    }
-    &.is-full-width {
-      /* selected item */
-      position: absolute;
-      top: 0;
-      height: auto;
-      z-index: 1;
-      cursor: auto;
-      -webkit-transition: z-index 0s 0s, top 0.4s 0s;
-      transition: z-index 0s 0s, top 0.4s 0s;
-      &::after {
-        height: 100vh;
-      }
-    }
   }
 }
 
@@ -251,14 +338,7 @@ span.cd-date{
   }
 }
 
-.down {
-  visibility: visible;
-  -webkit-transform: scale(1);
-  -ms-transform: scale(1);
-  transform: scale(1);
-  -webkit-transition: -webkit-transform 0.4s 0s, visibility 0s 0s;
-  transition: transform 0.4s 0s, visibility 0s 0s;
-}
+
 
 .project-is-open .cd-scroll, .down {
   -webkit-transform: translateX(-50%) scale(1);
@@ -281,6 +361,15 @@ span.cd-date{
     -ms-transform: translateX(-50%) scale(1.2);
     transform: translateX(-50%) scale(1.2);
   }
+}
+
+.down {
+  visibility: visible;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: -webkit-transform 0.4s 0s, visibility 0s 0s;
+  transition: transform 0.4s 0s, visibility 0s 0s;
 }
 
 .down:hover {

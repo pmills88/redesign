@@ -1,0 +1,20 @@
+{
+  "name": "redesign",
+  "version": "1.0.0",
+  "description": "My Portfolio Site",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "node-sass --watch scss -o css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/paulkmiller/redesign.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/paulkmiller/redesign/issues"
+  },
+  "homepage": "https://github.com/paulkmiller/redesign#readme"
+}

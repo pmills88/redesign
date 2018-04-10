@@ -24,13 +24,6 @@ $(document).ready(function() {
   });
 
   //////  Projects Code   ////////
-  // check if background-images have been loaded and show list items
-  $('.cd-single-project').bgLoaded({
-    afterLoaded: function() {
-      showCaption($('.projects-container li').eq(0));
-    }
-  });
-
   // open project
   $('.cd-single-project').on('click', function() {
     var selectedProject = $(this),
@@ -135,40 +128,4 @@ $(document).ready(function() {
     });
   }
 
-  function colorTrace(msg, color) {
-    console.log("%c" + msg, "color:" + color + ";font-weight:bold;");
-  }
-  colorTrace("Super mad credits to Justin Walker for inspiration -- http://codepen.io/jmw/", "blue");
-
 });
-
-////////  BG Loaded Function Code  ////////
-(function($) {
-  $.fn.bgLoaded = function(custom) {
-    var self = this;
-
-    var defaults = {
-      afterLoaded: function() {
-        this.addClass('bg-loaded');
-      }
-    };
-
-    var settings = $.extend({}, defaults, custom);
-
-    self.each(function() {
-      var $this = $(this),
-        bgImgs = window.getComputedStyle($this.get(0), '::before').getPropertyValue('content').replace(/'/g, "").replace(/"/g, "").split(', ');
-      $this.data('loaded-count', 0);
-      $.each(bgImgs, function(key, value) {
-        var img = value.replace(/^url\(["']?/, '').replace(/["']?\)$/, '');
-        $('<img/>').attr('src', img).load(function() {
-          $(this).remove(); // prevent memory leaks
-          $this.data('loaded-count', $this.data('loaded-count') + 1);
-          if ($this.data('loaded-count') >= bgImgs.length) {
-            settings.afterLoaded.call($this);
-          }
-        });
-      });
-    });
-  };
-})(jQuery);
