@@ -28,6 +28,11 @@
 .card-image {
   display: block;
   position: relative;
+  .image img {
+    display: block;
+    height: 100%;
+    width: 100%;
+  }
 }
 
 .card-content {

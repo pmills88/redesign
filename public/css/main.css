@@ -315,6 +315,10 @@ i.fa.fa-code {
 .card-image {
   display: block;
   position: relative; }
+  .card-image .image img {
+    display: block;
+    height: 100%;
+    width: 100%; }
 
 .card-content {
   padding: 20px; }
