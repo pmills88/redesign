@@ -514,7 +514,8 @@ span.cd-date {
 
 .projects-container {
   max-width: 1200px;
-  text-align: center; }
+  text-align: center;
+  margin: 0 auto; }
   .projects-container .cd-close, .projects-container .cd-scroll {
     display: block;
     z-index: 1;
