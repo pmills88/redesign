@@ -41,6 +41,11 @@ headerh1 {
     font-size: 1.5em;
     margin: 6px 0px 0 7px;
   }
+  .grafik_logo {
+    height: 50px;
+    width: 250px;
+    transform: translate(5px, -10px);
+  }
 }
 
 .cd-timeline-block {
@@ -76,6 +81,9 @@ headerh1 {
     top: 50%;
     margin-left: -15px;
     margin-top: -15px;
+  }
+  &.ufc-bubble {
+    background: #d20b0b;
   }
   &.cd-school {
     background: #7e8f7c;

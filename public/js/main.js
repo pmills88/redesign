@@ -1,7 +1,7 @@
 $(document).ready(function() {
 
   ////////  General Stuff  ////////
-  $(".projects").on("click", function() {
+  $(".projects-btn").on("click", function() {
     $(".sec-A").addClass("show-left");
     $(".head").hide();
   });

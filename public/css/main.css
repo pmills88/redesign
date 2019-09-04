@@ -60,6 +60,10 @@ headerh1 {
     color: white;
     font-size: 1.5em;
     margin: 6px 0px 0 7px; }
+  #cd-timeline .grafik_logo {
+    height: 50px;
+    width: 250px;
+    transform: translate(5px, -10px); }
 
 .cd-timeline-block {
   position: relative;
@@ -90,6 +94,8 @@ headerh1 {
     top: 50%;
     margin-left: -15px;
     margin-top: -15px; }
+  .cd-timeline-img.ufc-bubble {
+    background: #d20b0b; }
   .cd-timeline-img.cd-school {
     background: #7e8f7c; }
   .cd-timeline-img.erac-bubble {
@@ -408,22 +414,19 @@ i.fa.fa-code {
       background: none;
       border: 1px solid #06cbf6;
       padding: 10px 15px;
-      -webkit-transition: all 0.2s;
-      transition: all 0.2s; }
+      -webkit-transition: all 0.2s; }
       #projects .card .btn-container .btn-view-proj:hover {
         color: #FEFEFE;
         cursor: pointer;
-        transform: scale(1.025);
-        border-color: #048dab;
-        background: -moz-linear-gradient(-45deg, #048dab 0%, #047992 100%, #048dab 100%);
-        background: -webkit-linear-gradient(-45deg, #048dab 0%, #047992 100%, #048dab 100%);
-        background: linear-gradient(135deg, #048dab 0%, #047992 100%, #048dab 100%); }
-      #projects .card .btn-container .btn-view-proj:active {
+        border-color: #06cbf6;
         background: -moz-linear-gradient(-45deg, #03647a 0%, #025061 100%, #03647a 100%);
         background: -webkit-linear-gradient(-45deg, #047992 0%, #025061 100%, #047992 100%);
         background: linear-gradient(135deg, #03647a 0%, #025061 100%, #03647a 100%); }
-      #projects .card .btn-container .btn-view-proj:focus, #projects .card .btn-container .btn-view-proj:active {
-        outline: 0; }
+      #projects .card .btn-container .btn-view-proj:active {
+        border-color: #fff;
+        background: -moz-linear-gradient(-45deg, #03647a 0%, #025061 100%, #03647a 100%);
+        background: -webkit-linear-gradient(-45deg, #047992 0%, #025061 100%, #047992 100%);
+        background: linear-gradient(135deg, #03647a 0%, #025061 100%, #03647a 100%); }
 
 @media (min-width: 768px) {
   #projects .card {
@@ -802,7 +805,7 @@ a {
     font-weight: 300;
     color: #cf3b28;
     font-size: 19px;
-    letter-spacing: 0.5px;
+    letter-spacing: 1.2px;
     margin: 20px;
     line-height: normal;
     padding: .3em; }
@@ -827,7 +830,13 @@ a {
   border-bottom: 1px solid #eaeaea;
   cursor: pointer;
   font-weight: 300;
-  font-size: 15px; }
+  font-size: 15px;
+  border: 0;
+  text-align: center;
+  text-transform: uppercase;
+  height: 15px;
+  padding: 10px 0;
+  letter-spacing: 3px; }
 
 .left {
   position: fixed;
@@ -897,25 +906,13 @@ a {
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s; }
 
-.projects {
-  color: #cf3b28;
-  margin: 30px auto;
-  padding: 10px 0 25px 0;
-  display: inline-block;
-  letter-spacing: 5px;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s; }
-  .projects:hover {
-    background: #222;
-    border-bottom: 1px solid #cf3b28;
-    letter-spacing: 6px; }
-
-.about-btn {
+.about-btn, .projects-btn {
+  width: 150px;
   border-bottom: 1px solid #eaeaea;
   background: transparent;
   color: #cf3b28;
   padding: 10px 0 25px 0; }
-  .about-btn:hover {
+  .about-btn:hover, .projects-btn:hover {
     background: #222;
     letter-spacing: 4px;
     border-bottom: 1px solid #cf3b28; }
@@ -957,7 +954,7 @@ a {
 
   #bot-h5 {
     letter-spacing: 10px;
-    margin-top: 50px; }
+    margin-top: 0px; }
 
   .name {
     font-size: 1em;

@@ -189,7 +189,7 @@ font-size: 1.2em;
     font-weight: 300;
     color:#cf3b28;
     font-size: 19px;
-    letter-spacing: 0.5px;
+    letter-spacing: 1.2px;
     margin: 20px;
     line-height: normal;;
     padding: .3em;
@@ -219,6 +219,12 @@ font-size: 1.2em;
   cursor: pointer;
   font-weight: 300;
   font-size: 15px;
+  border: 0;
+  text-align: center;
+  text-transform: uppercase;
+  height: 15px;
+  padding: 10px 0;
+  letter-spacing: 3px;
 }
 
 .left {
@@ -298,22 +304,8 @@ font-size: 1.2em;
   -moz-transition: all 0.3s;
 }
 
-.projects {
-  color: #cf3b28;
-  margin: 30px auto;
-  padding: 10px 0 25px 0;
-  display: inline-block;
-  letter-spacing: 5px;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
-  &:hover {
-    background: #222;
-    border-bottom: 1px solid #cf3b28;
-    letter-spacing: 6px;
-  }
-}
-
-.about-btn {
+.about-btn, .projects-btn {
+  width: 150px;
   border-bottom: 1px solid #eaeaea;
   background: transparent;
   color: #cf3b28;
