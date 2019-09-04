@@ -464,16 +464,13 @@ i.fa.fa-code {
 #projects .card .content {
   font-size: 14px;
 }
-#projects .card .content li + li {
-  margin: 0;
-}
 #projects .card ul {
   padding: 0;
   list-style-type: none;
   margin: 10px 0;
 }
 #projects .card .tech-used {
-  margin: 4px 5px 8px 0;
+  margin: 4px 5px 4px 0px;
   padding: 1px 5px;
   border: 1px solid #007888;
   border-radius: 2px;
@@ -640,20 +637,6 @@ span.cd-date {
   transition: transform 1s 0s, visibility 0s 1s;
 }
 
-.down {
-  display: block;
-  z-index: 1;
-  width: 44px;
-  height: 44px;
-  /* image replacement */
-  overflow: hidden;
-  text-indent: 100%;
-  white-space: nowrap;
-  visibility: hidden;
-  -webkit-transition: -webkit-transform 1s 0s, visibility 0s 1s;
-  transition: transform 1s 0s, visibility 0s 1s;
-}
-
 .projects-container .cd-close {
   position: fixed;
   top: 10%;
@@ -677,18 +660,6 @@ span.cd-date {
   background-position: center center;
 }
 
-.down {
-  position: absolute;
-  bottom: 70px;
-  left: 50%;
-  -webkit-transform: translateX(-50%) scale(0);
-  -ms-transform: translateX(-50%) scale(0);
-  transform: translateX(-50%) scale(0);
-  background: url("../assets/icon-arrow-mobile.svg");
-  background-repeat: no-repeat;
-  background-position: center center;
-}
-
 .project-is-open .cd-close, .project-is-open .cd-scroll {
   visibility: visible;
   -webkit-transform: scale(1);
@@ -698,37 +669,12 @@ span.cd-date {
   transition: transform 0.4s 0s, visibility 0s 0s;
 }
 
-.project-is-open .cd-scroll, .down {
-  -webkit-transform: translateX(-50%) scale(1);
-  -ms-transform: translateX(-50%) scale(1);
-  transform: translateX(-50%) scale(1);
-  -webkit-animation: cd-translate 1.2s 0.4s;
-  animation: cd-translate 1.2s 0.4s;
-  -webkit-animation-iteration-count: 2;
-  animation-iteration-count: 2;
-}
-
 .no-touch .project-is-open .cd-close:hover {
   -webkit-transform: scale(1.2);
   -ms-transform: scale(1.2);
   transform: scale(1.2);
 }
 .no-touch .project-is-open .cd-scroll:hover {
-  -webkit-transform: translateX(-50%) scale(1.2);
-  -ms-transform: translateX(-50%) scale(1.2);
-  transform: translateX(-50%) scale(1.2);
-}
-
-.down {
-  visibility: visible;
-  -webkit-transform: scale(1);
-  -ms-transform: scale(1);
-  transform: scale(1);
-  -webkit-transition: -webkit-transform 0.4s 0s, visibility 0s 0s;
-  transition: transform 0.4s 0s, visibility 0s 0s;
-}
-
-.down:hover {
   -webkit-transform: translateX(-50%) scale(1.2);
   -ms-transform: translateX(-50%) scale(1.2);
   transform: translateX(-50%) scale(1.2);
@@ -1050,7 +996,19 @@ a {
   border-bottom: 1px solid #cf3b28;
 }
 
-.sub-btn {
+.down {
+  display: block;
+  position: absolute;
+  bottom: 70px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+  width: 44px;
+  height: 44px;
+  -webkit-transition: -webkit-transform 1s 0s, visibility 0s 1s;
+  transition: transform 1s 0s, visibility 0s 1s;
+}
+.sub-btn, .enter-btn {
   margin: 20px;
   display: inline-block;
   width: 120px;
@@ -1068,14 +1026,14 @@ a {
   -moz-transition: all 0.3s;
 }
 
-.about-btn, .projects-btn {
+.enter-btn, .about-btn, .projects-btn {
   width: 150px;
   border-bottom: 1px solid #eaeaea;
   background: transparent;
   color: #cf3b28;
   padding: 10px 0 25px 0;
 }
-.about-btn:hover, .projects-btn:hover {
+.enter-btn:hover, .about-btn:hover, .projects-btn:hover {
   background: #222;
   letter-spacing: 4px;
   border-bottom: 1px solid #cf3b28;

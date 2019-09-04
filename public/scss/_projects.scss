@@ -101,9 +101,6 @@
     letter-spacing: 0.05em;
   }
   .content {
-    li + li {
-      margin: 0;
-    }
     font-size: 14px;
   }
   ul {
@@ -112,7 +109,7 @@
     margin: 10px 0;
   }
   .tech-used {
-    margin: 4px 5px 8px 0;
+    margin: 4px 5px 4px 0px;
     padding: 1px 5px;
     border: 1px solid #007888;
     border-radius: 2px;
@@ -283,20 +280,6 @@ span.cd-date{
   }
 }
 
-.down {
-  display: block;
-  z-index: 1;
-  width: 44px;
-  height: 44px;
-  /* image replacement */
-  overflow: hidden;
-  text-indent: 100%;
-  white-space: nowrap;
-  visibility: hidden;
-  -webkit-transition: -webkit-transform 1s 0s, visibility 0s 1s;
-  transition: transform 1s 0s, visibility 0s 1s;
-}
-
 .projects-container {
   .cd-close {
     position: fixed;
@@ -322,18 +305,6 @@ span.cd-date{
   }
 }
 
-.down {
-  position: absolute;
-  bottom: 70px;
-  left: 50%;
-  -webkit-transform: translateX(-50%) scale(0);
-  -ms-transform: translateX(-50%) scale(0);
-  transform: translateX(-50%) scale(0);
-  background: url("../assets/icon-arrow-mobile.svg");
-  background-repeat: no-repeat;
-  background-position: center center;
-}
-
 .project-is-open {
   .cd-close, .cd-scroll {
     visibility: visible;
@@ -343,18 +314,6 @@ span.cd-date{
     -webkit-transition: -webkit-transform 0.4s 0s, visibility 0s 0s;
     transition: transform 0.4s 0s, visibility 0s 0s;
   }
-}
-
-
-
-.project-is-open .cd-scroll, .down {
-  -webkit-transform: translateX(-50%) scale(1);
-  -ms-transform: translateX(-50%) scale(1);
-  transform: translateX(-50%) scale(1);
-  -webkit-animation: cd-translate 1.2s 0.4s;
-  animation: cd-translate 1.2s 0.4s;
-  -webkit-animation-iteration-count: 2;
-  animation-iteration-count: 2;
 }
 
 .no-touch .project-is-open {
@@ -368,21 +327,6 @@ span.cd-date{
     -ms-transform: translateX(-50%) scale(1.2);
     transform: translateX(-50%) scale(1.2);
   }
-}
-
-.down {
-  visibility: visible;
-  -webkit-transform: scale(1);
-  -ms-transform: scale(1);
-  transform: scale(1);
-  -webkit-transition: -webkit-transform 0.4s 0s, visibility 0s 0s;
-  transition: transform 0.4s 0s, visibility 0s 0s;
-}
-
-.down:hover {
-  -webkit-transform: translateX(-50%) scale(1.2);
-  -ms-transform: translateX(-50%) scale(1.2);
-  transform: translateX(-50%) scale(1.2);
 }
 
 @-webkit-keyframes cd-translate {
