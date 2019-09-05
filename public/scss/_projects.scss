@@ -105,6 +105,10 @@
     p {
       max-height: 30px;
     }
+    a {
+      text-decoration: underline;
+      text-decoration-color: #cf3b28;
+    }
   }
   ul {
     padding: 0;
@@ -127,6 +131,7 @@
     text-align: center;
     a {
       border: none;
+      text-decoration: none;
     }
     .btn-view-proj {
       margin-top: 15px;
