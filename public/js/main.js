@@ -24,7 +24,7 @@ $(document).ready(function() {
 
   // Landing typer //
   var typed = new Typed('.element', {
-    strings: [" Empowering^1500", " Art^1500", " Freedom^1500", " A Headache^1500", " Dope^1500", " Life^1500"],
+    strings: [" Empowering^1500", " Art^1500", " Freedom^1500", " A Headache^1500", " Life^1500", " Dope^1500"],
     typeSpeed: 100
   });
   
