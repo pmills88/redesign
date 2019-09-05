@@ -487,15 +487,7 @@ i.fa.fa-code {
 #projects .card .tech-used:last-child {
   margin: 8px 5px 4px 0px;
 }
-#projects .card .btn-container {
-  width: 100%;
-  text-align: center;
-}
-#projects .card .btn-container a {
-  border: none;
-  text-decoration: none;
-}
-#projects .card .btn-container .btn-view-proj {
+#projects .card .btn-view-proj {
   margin-top: 15px;
   font-size: 14px;
   width: 100%;
@@ -506,7 +498,7 @@ i.fa.fa-code {
   padding: 10px 15px;
   -webkit-transition: all 0.2s;
 }
-#projects .card .btn-container .btn-view-proj:hover {
+#projects .card .btn-view-proj:hover {
   color: #FEFEFE;
   cursor: pointer;
   border-color: #06cbf6;
@@ -514,11 +506,15 @@ i.fa.fa-code {
   background: -webkit-linear-gradient(-45deg, #047992 0%, #025061 100%, #047992 100%);
   background: linear-gradient(135deg, #03647a 0%, #025061 100%, #03647a 100%);
 }
-#projects .card .btn-container .btn-view-proj:active {
+#projects .card .btn-view-proj:active {
   border-color: #fff;
   background: -moz-linear-gradient(-45deg, #03647a 0%, #025061 100%, #03647a 100%);
   background: -webkit-linear-gradient(-45deg, #047992 0%, #025061 100%, #047992 100%);
   background: linear-gradient(135deg, #03647a 0%, #025061 100%, #03647a 100%);
+}
+#projects .card .btn-view-proj a {
+  border: none;
+  text-decoration: none;
 }
 
 @media (min-width: 768px) {
