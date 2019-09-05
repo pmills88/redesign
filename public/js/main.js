@@ -1,6 +1,6 @@
 $(document).ready(function() {
 
-  ////////  General Stuff  ////////
+  //  General functionality //
   $(".projects-btn").on("click", function() {
     $(".sec-A").addClass("show-left");
     $(".head").hide();
@@ -8,7 +8,6 @@ $(document).ready(function() {
 
   $(".down").on("click", function() {
     $(".head").addClass("head-hide");
-    // enableScroll();
   });
 
   $(".home").on("click", function() {
@@ -23,7 +22,14 @@ $(document).ready(function() {
     }, 500);
   });
 
-  //////  Projects Code   ////////
+  // Landing typer //
+  var typed = new Typed('.element', {
+    strings: [" Empowering^1500", " Art^1500", " Freedom^1500", " A Headache^1500", " Dope^1500", " Life^1500"],
+    typeSpeed: 100
+  });
+  
+
+  // Projects Code //
   // open project
   $('.cd-single-project').on('click', function() {
     var selectedProject = $(this),
@@ -48,7 +54,7 @@ $(document).ready(function() {
     }, 500);
   });
 
-  // update title and .cd-scroll opacity while scrolling
+  // Update Title and .cd-scroll Opacity While Scrolling //
   $('.projects-container').on('scroll', function() {
     window.requestAnimationFrame(changeOpacity);
   });
@@ -97,7 +103,7 @@ $(document).ready(function() {
     }
   }
 
-  ////////  Fade-In code from About Me Section  ////////
+  //  Fade-In code from About Me Section  //
   var timelineBlocks = $('.cd-timeline-block'),
     offset = .8;
 
