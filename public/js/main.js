@@ -17,6 +17,7 @@ $(document).ready(function() {
 
   $(".about-btn").on("click", function() {
     $(".sec-B").addClass("show-bottom");
+    entrance();
     setTimeout(function() {
       showBlocks(timelineBlocks, offset);
     }, 500);
@@ -147,9 +148,9 @@ $(document).ready(function() {
   var vGames = $('#games');
   var vGoal = $('#goals');
 
-  $(document).on('ready', function() {
-    entrance();
-  });
+  // $(document).on('ready', function() {
+  //   entrance();
+  // });
 
   bar.on('click', showOverlay);
   back.on('click', showOverlay);
