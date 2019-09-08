@@ -522,7 +522,6 @@ i.fa.fa-code {
     border-radius: 2px; }
     .cd-timeline-content .timeline-content-info .timeline-content-info-title,
     .cd-timeline-content .timeline-content-info .timeline-content-info-date {
-      width: calc(50% - 2px);
       display: inline-block; }
     .cd-timeline-content .timeline-content-info i {
       margin-right: 5px; }
@@ -934,7 +933,7 @@ span.cd-date {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 50px;
+  margin-top: 25px;
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
   color: white;
@@ -1120,7 +1119,21 @@ span.cd-date {
         .skills .stats__overlay-back p {
           font-size: 18px; } }
 
-@media only screen and (min-width: 768px) {
+@media all and (min-width: 0px) {
+  .cd-timeline-content .timeline-content-info .timeline-content-info-title,
+  .cd-timeline-content .timeline-content-info .timeline-content-info-date {
+    width: calc(100% - 2px); }
+
+  .cd-timeline-content .timeline-content-info .timeline-content-info-title {
+    margin-bottom: 5px; } }
+@media all and (min-width: 565px) {
+  .cd-timeline-content .timeline-content-info .timeline-content-info-title,
+  .cd-timeline-content .timeline-content-info .timeline-content-info-date {
+    width: calc(50% - 2px); }
+
+  .cd-timeline-content .timeline-content-info .timeline-content-info-title {
+    margin-bottom: 0px; } }
+@media all and (min-width: 768px) {
   .cd-timeline-content h2 {
     font-size: 20px;
     font-size: 1.25rem; }
@@ -1132,7 +1145,7 @@ span.cd-date {
   .cd-timeline-content .cd-read-more, .cd-timeline-content .cd-date {
     font-size: 14px;
     font-size: 0.875rem; } }
-@media only screen and (min-width: 1024px) {
+@media all and (min-width: 1024px) {
   .intro h2 {
     font-size: 40px; }
   .intro h3 {
@@ -1241,7 +1254,7 @@ span.cd-date {
   .cd-project-info {
     position: relative;
     z-index: 1; } }
-@media only screen and (min-width: 1170px) {
+@media all and (min-width: 1170px) {
   .dinklebutt, .Optimus_logo {
     min-height: 40px;
     min-width: 40px;

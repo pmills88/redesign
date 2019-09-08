@@ -1,7 +1,22 @@
-@media only screen and (min-width: 768px) {
-  // .enter-btn {
-  //   margin: 20px;
-  // }
+@media all and (min-width: 0px) {
+  .cd-timeline-content .timeline-content-info .timeline-content-info-title, 
+  .cd-timeline-content .timeline-content-info .timeline-content-info-date {
+    width: calc(100% - 2px);
+  }
+  .cd-timeline-content .timeline-content-info .timeline-content-info-title {
+    margin-bottom: 5px;
+  }
+}
+@media all and (min-width: 565px) {
+  .cd-timeline-content .timeline-content-info .timeline-content-info-title, 
+  .cd-timeline-content .timeline-content-info .timeline-content-info-date {
+    width: calc(50% - 2px);
+  }
+  .cd-timeline-content .timeline-content-info .timeline-content-info-title {
+    margin-bottom: 0px;
+  }
+}
+@media all and (min-width: 768px) {
   .cd-timeline-content h2 {
     font-size: 20px;
     font-size: 1.25rem;
@@ -14,8 +29,9 @@
     font-size: 14px;
     font-size: 0.875rem;
   }
+
 }
-@media only screen and (min-width: 1024px) {
+@media all and (min-width: 1024px) {
   .intro{
     h2{
       font-size: 40px;
@@ -154,7 +170,7 @@
   }
 }
 
-@media only screen and (min-width: 1170px) {
+@media all and (min-width: 1170px) {
   .dinklebutt, .Optimus_logo {
     min-height: 40px;
     min-width: 40px;
