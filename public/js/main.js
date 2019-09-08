@@ -137,7 +137,7 @@ $(document).ready(function() {
   // bar graph
   var wrapper = $('.skills');
   var bar  = $('.stats__item-bar');
-  var nums = $('.stats__item-num');
+  var icons = $('.stats__item-icon');
   var overlay = $('.stats__overlay');
   var back = $('.stats__overlay-back');
   var isOpen = false;
@@ -154,7 +154,7 @@ $(document).ready(function() {
     bar.addClass('active');
     wrapper.addClass('active');
     wrapper.on('transitionend webkitTransitionend', function() {
-      nums.css('opacity', '1');
+      icons.css('opacity', '1');
       bar.css('transition-delay', '0');
       wrapper.off('transitionend webkitTransitionend');
     });
@@ -166,7 +166,7 @@ $(document).ready(function() {
       bar.css('transition', 'all 0.4s cubic-bezier(0.86, 0, 0.07, 1)')
       .removeClass('active');
       wrapper.removeClass('active');
-      nums.css('opacity', '0');
+      icons.css('opacity', '0');
       isOpen = true;
       
     updateInfo($(this).parent().index());
@@ -174,9 +174,74 @@ $(document).ready(function() {
       overlay.css('transition', 'all 0.4s cubic-bezier(0.755, 0.05, 0.855, 0.06)').removeClass('active');
       bar.addClass('active').removeAttr('style');
       wrapper.addClass('active');
-      nums.css('opacity', '1');
+      icons.css('opacity', '1');
       isOpen = false;
     }
   }
 
+  var data = [
+    {
+      year: "Normally, both your asses would be dead as fucking fried chicken, but you happen to pull this shit while I'm in a transitional period so I don't wanna kill you, I wanna help you. But I can't give you this case, it don't belong to me. Besides, I've already been through too much shit this morning over this case to hand it over to your dumb ass.",
+      goals: '65',
+      games: '82',
+      avg: '0.79'
+      
+    },
+    {
+      year: '2008-2009',
+      goals: '56',
+      games: '79',
+      avg: '0.7'
+      
+    },
+    {
+      year: '2009-2010',
+      goals: '50',
+      games: '72',
+      avg: '0.69'
+      
+    },
+    {
+      year: '2010-2011',
+      goals: '32',
+      games: '79',
+      avg: '0.40'
+      
+    },
+    {
+      year: '2011-2012',
+      goals: '38',
+      games: '78',
+      avg: '0.48'
+      
+    },
+    {
+      year: '2012-2013',
+      goals: '32',
+      games: '48',
+      avg: '0.66'
+      
+    },
+    {
+      year: '2013-2014',
+      goals: '51',
+      games: '78',
+      avg: '0.65'
+      
+    },
+    {
+      year: '2014-2015',
+      goals: '50',
+      games: '76',
+      avg: '0.66'
+      
+    }
+  ];
+  
+  function updateInfo(index) {
+    vYear.text(data[index].year);
+    vAvg.text(data[index].avg);
+    vGoal.text(data[index].goals);
+    vGames.text(data[index].games);
+  }
 });

@@ -312,7 +312,7 @@ a {
     /* this is the vertical line */
     content: '';
     position: absolute;
-    top: 0;
+    top: 15px;
     left: 18px;
     height: 100%;
     width: 4px;
@@ -944,7 +944,7 @@ span.cd-date {
     margin: 0; }
   .skills .stats {
     position: relative;
-    padding: 0 25px; }
+    padding: 25px 25px 30px; }
     @media (max-width: 690px) {
       .skills .stats {
         width: 100%; } }
@@ -1038,8 +1038,8 @@ span.cd-date {
       box-shadow: 10px 15px rgba(0, 0, 0, 0.2); }
       .skills .stats__item-bar.active {
         transform: none; }
-    .skills .stats__item-num {
-      margin-top: 25px;
+    .skills .stats__item-icon {
+      margin: 20px 10px;
       opacity: 0;
       transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1); }
     .skills .stats__overlay {
@@ -1112,12 +1112,19 @@ span.cd-date {
       .skills .stats__overlay-back:hover > svg {
         transform: translateX(-5px); }
       .skills .stats__overlay-back p {
+        position: absolute;
+        top: 0;
+        right: -15vw;
+        width: 20vw;
         font-weight: 700;
         font-size: 24px;
         margin: 0 0 0 12.5px; }
       @media (max-width: 690px) {
         .skills .stats__overlay-back p {
-          font-size: 18px; } }
+          font-size: 18px;
+          right: 15px;
+          top: 0;
+          width: 25vw; } }
 
 @media all and (min-width: 0px) {
   .cd-timeline-content .timeline-content-info .timeline-content-info-title,

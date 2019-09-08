@@ -28,7 +28,7 @@
 
 	<title>Paul Miller | Front End Developer</title>
 
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css">
 	<link rel="stylesheet" href="css/reset.css" type="text/css">
 	<link href="css/main.css" rel="stylesheet" type="text/css">
 	<script src="js/jQuery.min.js"></script>
@@ -40,18 +40,18 @@
 
 <body>
 
-	<section class="menu">
+	<nav class="menu">
 		<h1 class="home">P
 			<span>M </span>
 		</h1>
 		<ul class="topnav">
-			<li><a href="https://codepen.io/paulkmiller/" target="_blank"><i class="fa fa-codepen"></i></a></li>
-			<li><a href="https://twitter.com/NoDairyFruit" target="_blank"><i class="fa fa-twitter"></i></a></li>
-			<li><a href="https://www.linkedin.com/in/paulmiller88/en" target="_blank"><i class="fa fa-linkedin"></i></a>
+			<li><a href="https://codepen.io/paulkmiller/" target="_blank"><i class="fab fa-codepen"></i></a></li>
+			<li><a href="https://twitter.com/NoDairyFruit" target="_blank"><i class="fab fa-twitter"></i></a></li>
+			<li><a href="https://www.linkedin.com/in/paulmiller88/en" target="_blank"><i class="fab fa-linkedin"></i></a>
 			</li>
-			<li><a href="/assets/Paul-Miller-Resume.pdf" target="_blank"><i class="fa fa-file-text-o"></i></a></li>
+			<li><a href="/assets/Paul-Miller-Resume.pdf" target="_blank"><i class="fas fa-file-alt"></i></a></li>
 		</ul>
-	</section>
+	</nav>
 	<div class="head">
 		<h1 class="name">Paul<span>Miller</span></h1>
 		<p class="sub-name">dev/ is <span class="element"></span></p>
@@ -409,50 +409,59 @@
 	</section>
 
 	<section class="under sec-B">
-		<!-- <div class="about-info">
+		<div class="about-info">
 			<p>I am a developer.</p>
 		</div>
 		<div class="skills">
 			<main class="stats">
 				<ul class="stats__list">
 					<li class="stats__item">
-						<p class="stats__item-num">65</p>
+						<i class="fab fa-html5 stats__item-icon" aria-hidden="true"></i>
 						<div class="stats__item-bar"></div>
 					</li>
 					<li class="stats__item">
-						<p class="stats__item-num">56</p>
+						<i class="fab fa-css3 stats__item-icon" aria-hidden="true"></i>
 						<div class="stats__item-bar"></div>
 					</li>
 					<li class="stats__item">
-						<p class="stats__item-num">50</p>
+						<i class="fab fa-js-square stats__item-icon" aria-hidden="true"></i>
 						<div class="stats__item-bar"></div>
 					</li>
 					<li class="stats__item">
-						<p class="stats__item-num">32</p>
+					<i class="fas fa-universal-access stats__item-icon" aria-hidden="true"></i>
 						<div class="stats__item-bar"></div>
 					</li>
 					<li class="stats__item">
-						<p class="stats__item-num">38</p>
+						<i class="fab fa-wordpress stats__item-icon" aria-hidden="true"></i>
 						<div class="stats__item-bar"></div>
 					</li>
 					<li class="stats__item">
-						<p class="stats__item-num">32</p>
+						<i class="fab fa-certificate stats__item-icon" aria-hidden="true"></i>
 						<div class="stats__item-bar"></div>
 					</li>
 				</ul>
 				<div class="stats__overlay">
-					<div class="stats__overlay-back">
-						<svg fill="white" xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36">
-							<path d="M30 16.5H11.74l8.38-8.38L18 6 6 18l12 12 2.12-2.12-8.38-8.38H30v-3z"></path>
-						</svg>
+				<div class="stats__overlay-back">
+					<svg fill="white" xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36"><path d="M30 16.5H11.74l8.38-8.38L18 6 6 18l12 12 2.12-2.12-8.38-8.38H30v-3z"></path></svg>
+					<p id="year">2009-2010</p>
+				</div>
+				<div class="stats__overlay-avg">
+					<p class="avg" id="avg">0.69</p>
+					<p>Goals per game</p>
+				</div>
+				<div class="stats__overlay-info">
+					<div class="stats__overlay-info-half">
+						<p id="goals">50</p>
+						<p>Goals</p>
 					</div>
-					<div class="stats__overlay-avg">
-						<p class="avg" id="avg">0.69</p>
-						<p>Goals per game</p>
+					<div class="stats__overlay-info-half">
+						<p id="games">72</p>
+						<p>Games</p>
 					</div>
 				</div>
+				</div>
 			</main>
-		</div> -->
+		</div>
 		<div id="cd-timeline" class="cd-container">
 			<div class="cd-timeline-block">
 				<div class="cd-timeline-img cd-timeline-top pulse code-bubble">
@@ -483,8 +492,7 @@
 					</p>
 					<p>Worked diligently and successfully migrated old practices ( using FTP for all file transactions /
 						no AGILE / no CICD / no Git )
-						into a modern dev practice. Pushed for moving away from jQuery and into ES5/6 with limited
-						success.
+						into a modern dev practice. Pushed for moving away from jQuery and into ES5/6.
 					</p>
 				</div>
 			</div>

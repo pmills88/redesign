@@ -17,7 +17,7 @@ $heights: (65, 56, 50, 32, 38, 32.1, 51, 50.1);
     }
     .stats {
         position: relative;
-        padding: 0 $spacing;
+        padding: 25px 25px 30px;
         @media (max-width: 690px) {
             width: 100%;
         }
@@ -76,8 +76,8 @@ $heights: (65, 56, 50, 32, 38, 32.1, 51, 50.1);
                 transform: none;
             }
         }
-        &__item-num {
-            margin-top: $spacing;
+        &__item-icon {
+            margin: 20px 10px;
             opacity: 0;
             transition: all .4s cubic-bezier(0.23, 1, 0.32, 1);
         }
@@ -167,6 +167,10 @@ $heights: (65, 56, 50, 32, 38, 32.1, 51, 50.1);
                 }
             }
             p {
+                position: absolute;
+                top: 0;
+                right: -15vw;
+                width: 20vw;
                 font-weight: 700;
                 font-size: 24px;
                 margin: 0 0 0 $spacing/2;
@@ -174,6 +178,9 @@ $heights: (65, 56, 50, 32, 38, 32.1, 51, 50.1);
             @media (max-width: 690px) {
                 p {
                     font-size: 18px;
+                    right: 15px;
+                    top: 0;
+                    width: 25vw;
                 }
             }
         }
