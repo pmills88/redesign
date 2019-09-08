@@ -186,56 +186,56 @@ $(document).ready(function() {
 
   var data = [
     {
-      year: '2007-2008',
+      // year: '2007-2008',
       goals: '65',
       games: '82',
       avg: '0.79'
       
     },
     {
-      year: '2008-2009',
+      // year: '2008-2009',
       goals: '56',
       games: '79',
       avg: '0.7'
       
     },
     {
-      year: '2009-2010',
+      // year: '2009-2010',
       goals: '50',
       games: '72',
       avg: '0.69'
       
     },
     {
-      year: '2010-2011',
+      // year: '2010-2011',
       goals: '32',
       games: '79',
       avg: '0.40'
       
     },
     {
-      year: '2011-2012',
+      // year: '2011-2012',
       goals: '38',
       games: '78',
       avg: '0.48'
       
     },
     {
-      year: '2012-2013',
+      // year: '2012-2013',
       goals: '32',
       games: '48',
       avg: '0.66'
       
     },
     {
-      year: '2013-2014',
+      // year: '2013-2014',
       goals: '51',
       games: '78',
       avg: '0.65'
       
     },
     {
-      year: '2014-2015',
+      // year: '2014-2015',
       goals: '50',
       games: '76',
       avg: '0.66'

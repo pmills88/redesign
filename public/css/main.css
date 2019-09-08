@@ -949,32 +949,6 @@ span.cd-date {
     @media (max-width: 690px) {
       .skills .stats {
         width: 100%; } }
-    .skills .stats__header {
-      display: flex;
-      align-items: center;
-      transform: translate3d(0, -150px, 0);
-      opacity: 0;
-      transform-origin: left center;
-      transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1); }
-      .skills .stats__header.active {
-        transform: none;
-        opacity: 1; }
-    .skills .stats__header-num {
-      margin-right: 25px; }
-      .skills .stats__header-num p {
-        font-size: 80px;
-        margin: 0;
-        font-weight: 700; }
-    .skills .stats__header-name p {
-      color: #f8d0d8;
-      margin: 0;
-      font-size: 18px; }
-    .skills .stats__header-name span {
-      display: block;
-      color: white;
-      font-weight: 700;
-      font-size: 36px;
-      line-height: 0.8; }
     .skills .stats__item {
       height: 400px;
       display: flex;
@@ -1070,7 +1044,7 @@ span.cd-date {
       opacity: 0;
       transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1); }
     .skills .stats__overlay {
-      position: fixed;
+      position: absolute;
       top: 0;
       left: 0;
       width: 100%;
