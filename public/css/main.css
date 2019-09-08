@@ -959,29 +959,23 @@ span.cd-date {
       perspective: 1000px;
       transition: all .3s ease-in-out; }
       .skills .stats__item:nth-of-type(1) .stats__item-bar {
-        height: 260px;
+        height: 300px;
         transition-delay: 0.1s; }
       .skills .stats__item:nth-of-type(2) .stats__item-bar {
-        height: 224px;
+        height: 270px;
         transition-delay: 0.2s; }
       .skills .stats__item:nth-of-type(3) .stats__item-bar {
-        height: 200px;
+        height: 180px;
         transition-delay: 0.3s; }
       .skills .stats__item:nth-of-type(4) .stats__item-bar {
-        height: 128px;
+        height: 240px;
         transition-delay: 0.4s; }
       .skills .stats__item:nth-of-type(5) .stats__item-bar {
-        height: 152px;
+        height: 210px;
         transition-delay: 0.5s; }
       .skills .stats__item:nth-of-type(6) .stats__item-bar {
-        height: 128.4px;
+        height: 96px;
         transition-delay: 0.6s; }
-      .skills .stats__item:nth-of-type(7) .stats__item-bar {
-        height: 204px;
-        transition-delay: 0.7s; }
-      .skills .stats__item:nth-of-type(8) .stats__item-bar {
-        height: 200.4px;
-        transition-delay: 0.8s; }
       .skills .stats__item:last-child {
         margin-right: 0; }
       @media (max-width: 690px) {
@@ -992,37 +986,29 @@ span.cd-date {
           flex-direction: row;
           align-items: center; }
           .skills .stats__item:nth-of-type(1) .stats__item-bar {
-            width: 65%;
+            width: 100%;
             height: 30px;
             transition-delay: 0.1s; }
           .skills .stats__item:nth-of-type(2) .stats__item-bar {
-            width: 56%;
+            width: 90%;
             height: 30px;
             transition-delay: 0.2s; }
           .skills .stats__item:nth-of-type(3) .stats__item-bar {
-            width: 50%;
+            width: 60%;
             height: 30px;
             transition-delay: 0.3s; }
           .skills .stats__item:nth-of-type(4) .stats__item-bar {
-            width: 32%;
+            width: 80%;
             height: 30px;
             transition-delay: 0.4s; }
           .skills .stats__item:nth-of-type(5) .stats__item-bar {
-            width: 38%;
+            width: 70%;
             height: 30px;
             transition-delay: 0.5s; }
           .skills .stats__item:nth-of-type(6) .stats__item-bar {
-            width: 32.1%;
+            width: 32%;
             height: 30px;
             transition-delay: 0.6s; }
-          .skills .stats__item:nth-of-type(7) .stats__item-bar {
-            width: 51%;
-            height: 30px;
-            transition-delay: 0.7s; }
-          .skills .stats__item:nth-of-type(8) .stats__item-bar {
-            width: 50.1%;
-            height: 30px;
-            transition-delay: 0.8s; }
           .skills .stats__item .stats__item-num {
             margin-right: 25px; } }
       .skills .stats__item:hover {
@@ -1039,6 +1025,7 @@ span.cd-date {
       .skills .stats__item-bar.active {
         transform: none; }
     .skills .stats__item-icon {
+      font-size: 1.5rem;
       margin: 20px 10px;
       opacity: 0;
       transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1); }
@@ -1060,7 +1047,7 @@ span.cd-date {
       @media (max-width: 690px) {
         .skills .stats__overlay {
           padding: 12.5px; } }
-    .skills .stats__overlay-avg {
+    .skills .stats__overlay-score {
       position: absolute;
       top: 50%;
       left: 50%;
@@ -1073,36 +1060,17 @@ span.cd-date {
       display: flex;
       flex-flow: column wrap;
       justify-content: center; }
-      .skills .stats__overlay-avg > p {
+      .skills .stats__overlay-score > p {
         margin: 0; }
-      .skills .stats__overlay-avg .avg {
+      .skills .stats__overlay-score .score {
         font-size: 100px;
         font-weight: 700; }
       @media (max-width: 690px) {
-        .skills .stats__overlay-avg {
+        .skills .stats__overlay-score {
           width: 240px;
           height: 240px; }
-          .skills .stats__overlay-avg .avg {
+          .skills .stats__overlay-score .score {
             font-size: 65px; } }
-    .skills .stats__overlay-info {
-      position: absolute;
-      bottom: 25px;
-      left: 50px;
-      display: flex; }
-      @media (max-width: 690px) {
-        .skills .stats__overlay-info {
-          left: 25px; } }
-    .skills .stats__overlay-info-half {
-      margin-right: 25px; }
-      .skills .stats__overlay-info-half p {
-        margin: 0;
-        line-height: 1.2; }
-        .skills .stats__overlay-info-half p:first-child {
-          font-size: 50px;
-          font-weight: 700; }
-      @media (max-width: 690px) {
-        .skills .stats__overlay-info-half p:first-child {
-          font-size: 24px; } }
     .skills .stats__overlay-back {
       display: flex;
       align-items: center;
@@ -1113,17 +1081,17 @@ span.cd-date {
         transform: translateX(-5px); }
       .skills .stats__overlay-back p {
         position: absolute;
-        top: 0;
+        top: 50%;
+        transform: translateY(-50%);
         right: -15vw;
         width: 20vw;
         font-weight: 700;
-        font-size: 24px;
+        font-size: 18px;
         margin: 0 0 0 12.5px; }
       @media (max-width: 690px) {
         .skills .stats__overlay-back p {
-          font-size: 18px;
+          font-size: 16px;
           right: 15px;
-          top: 0;
           width: 25vw; } }
 
 @media all and (min-width: 0px) {
