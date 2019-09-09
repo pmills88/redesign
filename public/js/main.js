@@ -196,11 +196,11 @@ $(document).ready(function() {
     },
     {
       info: '2011-2012',
-      score: '70'
+      score: '60'
     },
     {
       info: '2012-2013',
-      score: '32'
+      score: '70'
     }
   ];
   
