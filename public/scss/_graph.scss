@@ -19,6 +19,14 @@ $heights: (100, 90, 65, 80, 60, 70);
         padding: 25px 25px 30px;
         @media (max-width: 690px) {
             width: 100%;
+            .helper:after {
+                content: '— Touch A Bar —';
+                position: absolute;
+                bottom: 7px;
+                left: 50%;
+                transform: translateX(-50%);
+                font-size: .9em;
+            }
         }
         &__item {
             height: 400px;

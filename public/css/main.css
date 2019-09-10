@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url(https://fonts.googleapis.com/css?family=Lato:300,400,900);
 html, body {
   margin: 0;
@@ -1148,6 +1149,14 @@ span.cd-date {
 @media (max-width: 690px) {
   .skills .stats {
     width: 100%;
+  }
+  .skills .stats .helper:after {
+    content: "— Touch A Bar —";
+    position: absolute;
+    bottom: 7px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 0.9em;
   }
 }
 .skills .stats__item {

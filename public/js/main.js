@@ -136,6 +136,7 @@ $(document).ready(function() {
 
   // bar graph
   var wrapper = $('.skills');
+  var helper = $('.skills .stats .helper');
   var bar  = $('.stats__item-bar');
   var icons = $('.stats__item-icon');
   var overlay = $('.stats__overlay');
@@ -164,6 +165,7 @@ $(document).ready(function() {
       bar.css('transition', 'all 0.4s cubic-bezier(0.86, 0, 0.07, 1)')
       .removeClass('active');
       wrapper.removeClass('active');
+      helper.removeClass('helper');
       icons.css('opacity', '0');
       isOpen = true;
       
