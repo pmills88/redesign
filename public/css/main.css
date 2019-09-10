@@ -358,7 +358,12 @@ figure {
   background: #222C32;
 }
 .sec-B .about-info {
-  padding: 0 3em;
+  padding: 0 6em;
+}
+@media (max-width: 690px) {
+  .sec-B .about-info {
+    padding: 0 3em;
+  }
 }
 .sec-B .about-info p {
   line-height: 24px;
@@ -832,8 +837,8 @@ i.fa.fa-code {
 }
 #projects .card .tech-used {
   margin: 4px 5px 4px 0px;
-  padding: 1px 5px;
-  border: 1px solid #007888;
+  padding: 2px 5px;
+  background: #007888;
   border-radius: 2px;
   display: inline-block;
 }
@@ -1529,6 +1534,21 @@ span.cd-date {
   .cd-project-info {
     position: relative;
     z-index: 1;
+  }
+}
+@media all and (max-width: 1169px) {
+  .cd-timeline-img img.ufc_logo {
+    height: 20px;
+    width: 20px;
+    margin-left: -10px;
+    margin-top: -10px;
+  }
+
+  .cd-timeline-img img.gwp_logo {
+    height: 20px;
+    width: 20px;
+    margin-left: -10px;
+    margin-top: -10px;
   }
 }
 @media all and (min-width: 1170px) {
