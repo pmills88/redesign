@@ -179,27 +179,27 @@ $(document).ready(function() {
 
   var data = [
     {
-      info: "Normally, both your asses would be dead as fucking fried chicken, but you happen to pull this shit while I'm in a transitional period so I don't wanna kill you, I wanna help you.",
+      info: "I am firmly grounded in semantic markup and the long-term effects this has on a project, be it with A11Y, or with another developer looking to make sense of everything.",
       score: '100'
     },
     {
-      info: '2008-2009',
+      info: "Quite literally my favorite language since I started this journey into Web Development. I've always been one to aim to realize and extend a design using this robust and fantastic language, especially with SCSS.",
       score: '90'      
     },
     {
-      info: '2009-2010',
+      info: "With the prevalance of JS frameworks in todays environment, I've kept my focus on ES5/ES6 and jQuery. I am now in the process of becoming familiar with React and look forward to future projects involving it, as I already practice component-based structures with PHP.",
       score: '60'
     },
     {
-      info: '2010-2011',
+      info: "A major focus of mine over the past few years, especially as the air around failing WCAG conventions has becoming increasingly litigious. Accessibility is the moral responsibility of every developer and not simply a nicety.",
       score: '80'
     },
     {
-      info: '2011-2012',
+      info: "With my work in Wordpress at Grafik, my exposure to PHP has increased. So much so, that I feel comfortable enough to list it here, instead of Ruby, my initial server-side language. I look forward to strengthen my understanding with mnore projects.",
       score: '60'
     },
     {
-      info: '2012-2013',
+      info: "The ever-popular and versatile CMS, I will admit that I didn't care for it much until I discovered Advanced Custom Fields. Now coupled with the ease of themeing as WP evolved, it is one of my many favorite tools toward achieving a goal quickly.",
       score: '70'
     }
   ];
