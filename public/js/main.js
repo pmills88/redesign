@@ -15,6 +15,11 @@ $(document).ready(function() {
     $(".left").removeClass("show-left");
     $(".sec-B").removeClass("show-bottom");
     $("#mburger").removeClass("active");
+    overlay.css('transition', 'all 0.4s cubic-bezier(0.755, 0.05, 0.855, 0.06)').removeClass('active');
+    bar.addClass('active').removeAttr('style');
+    wrapper.addClass('active');
+    icons.css('opacity', '1');
+    isOpen = false;
   });
 
   $(".about-btn").on("click", function() {

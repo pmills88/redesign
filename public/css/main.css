@@ -58,9 +58,6 @@ figure {
   -webkit-transition: all 0.2s;
   -moz-transition: all 0.2s;
 }
-.menu .home:hover {
-  color: #666;
-}
 .menu .mburger {
   display: inline-block;
   margin-bottom: -3px;
