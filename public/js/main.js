@@ -3,6 +3,7 @@ $(document).ready(function() {
   //  General functionality 
   $(".projects-btn").on("click", function() {
     $(".sec-A").addClass("show-left");
+    $("#mburger").addClass("active");
     $(".head").hide();
   });
 
@@ -13,10 +14,12 @@ $(document).ready(function() {
   $(".home").on("click", function() {
     $(".left").removeClass("show-left");
     $(".sec-B").removeClass("show-bottom");
+    $("#mburger").removeClass("active");
   });
 
   $(".about-btn").on("click", function() {
     $(".sec-B").addClass("show-bottom");
+    $("#mburger").addClass("active");
     entrance();
     setTimeout(function() {
       showBlocks(timelineBlocks, offset);

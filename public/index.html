@@ -30,7 +30,6 @@
 
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css">
 	<link rel="stylesheet" href="css/reset.css" type="text/css">
-	<!-- <link rel="stylesheet" href="css/normalize.css" type="text/css"> -->
 	<link rel="stylesheet" href="css/main.css" type="text/css">
 	<script src="js/jQuery.min.js"></script>
 	<script src="js/typed.min.js"></script>
@@ -43,7 +42,12 @@
 
 	<nav class="menu">
 		<h1 class="home">P
-			<span>M </span>
+			<div class="mburger" id="mburger">
+				<span class="line"></span>
+				<span class="line"></span>
+				<span class="line"></span>
+				<span class="line"></span>
+			</div>
 		</h1>
 		<ul class="topnav">
 			<li><a href="https://codepen.io/paulkmiller/" target="_blank"><i class="fab fa-codepen"></i></a></li>
@@ -56,7 +60,7 @@
 	<div class="head">
 		<h1 class="name">Paul<span>Miller</span></h1>
 		<p class="sub-name">dev/ is <span class="element"></span></p>
-		<button class="enter-btn down">Enter</button>
+		<button type="button" class="enter-btn down">Enter</button>
 	</div>
 	<section class="content-wrap">
 		<div class="sec intro">
@@ -68,8 +72,8 @@
 						<span>And this is what I do</span>
 					</h5>
 				</div>
-				<button class="sub-btn projects-btn pg-btn">Projects</button>
-				<button class="sub-btn about-btn">About</button>
+				<button type="button" class="sub-btn projects-btn pg-btn">Projects</button>
+				<button type="button" class="sub-btn about-btn">About</button>
 			</div>
 		</div>
 	</section>

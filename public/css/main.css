@@ -44,7 +44,7 @@ figure {
   text-decoration: none;
   color: inherit;
 }
-.menu h1 {
+.menu .home {
   margin: 0 0 0 14px;
   font-weight: 400;
   color: #eaeaea;
@@ -58,17 +58,56 @@ figure {
   -webkit-transition: all 0.2s;
   -moz-transition: all 0.2s;
 }
-.menu h1 span {
-  color: #ff4900;
-  transition: all 0.2s;
-  -webkit-transition: all 0.2s;
-  -moz-transition: all 0.2s;
-}
-.menu h1:hover {
+.menu .home:hover {
   color: #666;
 }
-.menu h1:hover span {
-  color: #666;
+.menu .mburger {
+  display: inline-block;
+  margin-bottom: -3px;
+  height: 20px;
+  width: 28px;
+  position: relative;
+  text-align: center;
+}
+.menu .mburger .line {
+  width: 19px;
+  height: 3px;
+  background-color: #ff4900;
+  display: block;
+  margin: 8px auto;
+  transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+}
+.menu .mburger .line:nth-child(1) {
+  transform: translateY(-1px) translateX(-11px) rotate(-90deg);
+}
+.menu .mburger .line:nth-child(2) {
+  transform: translateY(-13px) translateX(-6px) rotate(65deg);
+  border-top-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.menu .mburger .line:nth-child(3) {
+  transform: translateY(-24px) translateX(1px) rotate(-65deg);
+  border-bottom-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.menu .mburger .line:nth-child(4) {
+  transform: translateY(-34px) translateX(6px) rotate(-90deg);
+}
+.menu .mburger.active .line:nth-child(1) {
+  transform: translateY(-8px) translateX(0px) rotate(0);
+}
+.menu .mburger.active .line:nth-child(2) {
+  transform: translateY(-12px) translateX(0px) rotate(0);
+  border-top-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.menu .mburger.active .line:nth-child(3) {
+  transform: translateY(-16px) translateX(0px) rotate(0);
+  border-bottom-left-radius: 0;
+  border-top-right-radius: 0;
+}
+.menu .mburger.active .line:nth-child(4) {
+  transform: translateY(-34px) translateX(0px) rotate(0);
 }
 
 .topnav {
