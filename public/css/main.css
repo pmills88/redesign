@@ -339,7 +339,7 @@ figure {
   padding-top: 50px;
   background: #222C32; }
   .sec-B .about-info {
-    padding: 0 6em; }
+    padding: 3em 6em; }
     @media (max-width: 690px) {
       .sec-B .about-info {
         padding: 0 3em; } }
@@ -350,7 +350,7 @@ figure {
     .sec-B .about-info h1 {
       font-size: 2em;
       line-height: 42px;
-      margin: 24px 0;
+      margin-bottom: 24px;
       color: White; }
     .sec-B .about-info h3 {
       font-size: 1.3rem;
