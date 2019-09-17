@@ -194,7 +194,7 @@ figure {
     letter-spacing: 5px;
     font-size: 2.3em; }
   .intro h3 {
-    font-weight: 300;
+    font-weight: normal;
     color: #ff4900;
     font-size: 19px;
     letter-spacing: 1.2px;
@@ -211,7 +211,7 @@ figure {
 
 #bot-h5 {
   color: #eaeaea;
-  font-weight: 300;
+  font-weight: normal;
   letter-spacing: 5px;
   margin-top: 0;
   margin-bottom: 0; }
