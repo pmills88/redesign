@@ -450,11 +450,9 @@ figure {
   0% {
     transform: scale(0.6);
     opacity: 0; }
-
   33% {
     transform: scale(1);
     opacity: 1; }
-
   100% {
     transform: scale(1.4);
     opacity: 0; } }
@@ -487,13 +485,11 @@ i.fa.fa-code {
     -webkit-transform: scale(0.5);
     -ms-transform: scale(0.5);
     transform: scale(0.5); }
-
   60% {
     opacity: 1;
     -webkit-transform: scale(1.2);
     -ms-transform: scale(1.2);
     transform: scale(1.2); }
-
   100% {
     -webkit-transform: scale(1);
     -ms-transform: scale(1);
@@ -504,13 +500,11 @@ i.fa.fa-code {
     -webkit-transform: scale(0.5);
     -ms-transform: scale(0.5);
     transform: scale(0.5); }
-
   60% {
     opacity: 1;
     -webkit-transform: scale(1.2);
     -ms-transform: scale(1.2);
     transform: scale(1.2); }
-
   100% {
     -webkit-transform: scale(1);
     -ms-transform: scale(1);
@@ -544,6 +538,14 @@ i.fa.fa-code {
   .cd-timeline-content .cd-read-more, .cd-timeline-content .cd-date {
     display: inline-block; }
   .cd-timeline-content p {
+    margin: 1em 0;
+    line-height: 1.6;
+    color: #fff; }
+  .cd-timeline-content ul {
+    font-size: 16px;
+    font-size: 0.9rem;
+    list-style-type: disc;
+    padding-left: 30px;
     margin: 1em 0;
     line-height: 1.6;
     color: #fff; }
@@ -586,11 +588,9 @@ i.fa.fa-code {
   0% {
     opacity: 0;
     -webkit-transform: translateX(-100px); }
-
   60% {
     opacity: 1;
     -webkit-transform: translateX(20px); }
-
   100% {
     -webkit-transform: translateX(0); } }
 @keyframes cd-bounce-2 {
@@ -599,13 +599,11 @@ i.fa.fa-code {
     -webkit-transform: translateX(-100px);
     -ms-transform: translateX(-100px);
     transform: translateX(-100px); }
-
   60% {
     opacity: 1;
     -webkit-transform: translateX(20px);
     -ms-transform: translateX(20px);
     transform: translateX(20px); }
-
   100% {
     -webkit-transform: translateX(0);
     -ms-transform: translateX(0);
@@ -614,11 +612,9 @@ i.fa.fa-code {
   0% {
     opacity: 0;
     -webkit-transform: translateX(100px); }
-
   60% {
     opacity: 1;
     -webkit-transform: translateX(-20px); }
-
   100% {
     -webkit-transform: translateX(0); } }
 @keyframes cd-bounce-2-inverse {
@@ -627,13 +623,11 @@ i.fa.fa-code {
     -webkit-transform: translateX(100px);
     -ms-transform: translateX(100px);
     transform: translateX(100px); }
-
   60% {
     opacity: 1;
     -webkit-transform: translateX(-20px);
     -ms-transform: translateX(-20px);
     transform: translateX(-20px); }
-
   100% {
     -webkit-transform: translateX(0);
     -ms-transform: translateX(0);
@@ -725,7 +719,7 @@ i.fa.fa-code {
       max-height: 30px; }
     #projects .card .content a {
       text-decoration: underline;
-      text-decoration-color: #cf3b28; }
+      text-decoration-color: #06cbf6; }
   #projects .card ul {
     padding: 0;
     list-style-type: none;
@@ -961,10 +955,8 @@ span.cd-date {
 @-webkit-keyframes cd-translate {
   0% {
     -webkit-transform: translateX(-50%) scale(1); }
-
   50% {
     -webkit-transform: translateY(10px) translateX(-50%) scale(1); }
-
   100% {
     -webkit-transform: translateX(-50%) scale(1); } }
 @keyframes cd-translate {
@@ -972,12 +964,10 @@ span.cd-date {
     -webkit-transform: translateX(-50%) scale(1);
     -ms-transform: translateX(-50%) scale(1);
     transform: translateX(-50%) scale(1); }
-
   50% {
     -webkit-transform: translateY(10px) translateX(-50%) scale(1);
     -ms-transform: translateY(10px) translateX(-50%) scale(1);
     transform: translateY(10px) translateX(-50%) scale(1); }
-
   100% {
     -webkit-transform: translateX(-50%) scale(1);
     -ms-transform: translateX(-50%) scale(1);
@@ -1299,18 +1289,6 @@ span.cd-date {
   .cd-project-info {
     position: relative;
     z-index: 1; } }
-@media all and (max-width: 1169px) {
-  .cd-timeline-img img.ufc_logo {
-    height: 20px;
-    width: 20px;
-    margin-left: -10px;
-    margin-top: -10px; }
-
-  .cd-timeline-img img.gwp_logo {
-    height: 20px;
-    width: 20px;
-    margin-left: -10px;
-    margin-top: -10px; } }
 @media all and (min-width: 1170px) {
   .dinklebutt, .Optimus_logo {
     min-height: 40px;
@@ -1323,36 +1301,39 @@ span.cd-date {
     min-height: 50px;
     min-width: 50px;
     margin: -25px 0 0 -25px; }
-
   #cd-timeline img.partnership_logo {
     min-height: 50px;
     min-width: 50px;
     margin: -24px 0 0 -24px; }
-
   #cd-timeline img.erac_logo {
     min-height: 40px;
     min-width: 45px;
     margin: -20px 0 0 -24px; }
-
+  #cd-timeline img.ce_logo {
+    height: 50px;
+    width: 50px;
+    transform: translate(-9px, -10px); }
+  #cd-timeline img.grafik_logo {
+    height: 50px;
+    width: 250px;
+    transform: translate(5px, -10px); }
   #cd-timeline img.ga_logo {
     min-height: 50px;
     min-width: 50px;
     margin: -25px 0 0 -25px; }
-
   #cd-timeline img.jbs_logo {
     min-height: 50px;
     min-width: 50px;
     margin: -24px 0 0 -25px; }
-
   #cd-timeline .fa-gmu {
     margin: 13px;
     color: white;
     font-size: 2em; }
-
   #cd-timeline .fa.fa-code {
     font-size: 2.5em;
     margin: 10px 9px; }
 
+  #cd-timeline
   .cd-timeline-img {
     width: 60px;
     height: 60px;
@@ -1400,7 +1381,7 @@ span.cd-date {
     left: auto;
     right: 100%;
     border-color: transparent;
-    border-right-color: #222; }
+    border-right-color: #333C42; }
 
   .cd-timeline-block:nth-child(even) .cd-timeline-content .cd-read-more {
     float: right; }
@@ -1460,3 +1441,5 @@ span.cd-date {
   .cssanimations .cd-timeline-block:nth-child(even) .cd-timeline-content.bounce-in {
     -webkit-animation: cd-bounce-2-inverse 0.6s;
     animation: cd-bounce-2-inverse 0.6s; } }
+
+/*# sourceMappingURL=main.css.map */

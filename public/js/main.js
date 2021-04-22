@@ -205,7 +205,7 @@ $(document).ready(function() {
       score: '80'
     },
     {
-      info: "With my work in Wordpress at Grafik, my exposure to PHP has increased. So much so, that I feel comfortable enough to list it here, instead of Ruby, my initial server-side language. I look forward to strengthen my understanding with mnore projects.",
+      info: "With my work in Wordpress at Grafik, my exposure to PHP has increased. So much so, that I feel comfortable enough to list it here, instead of Ruby, my initial server-side language. I look forward to the opportunity to strengthen my understanding with more projects.",
       score: '60'
     },
     {

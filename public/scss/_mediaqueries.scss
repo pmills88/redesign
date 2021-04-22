@@ -171,18 +171,22 @@
 }
 
 @media all and (max-width: 1169px) {
-  .cd-timeline-img img.ufc_logo {
-    height: 20px;
-    width: 20px;
-    margin-left: -10px;
-    margin-top: -10px;
-  }
-  .cd-timeline-img img.gwp_logo {
-    height: 20px;
-    width: 20px;
-    margin-left: -10px;
-    margin-top: -10px;
-  }
+  // .cd-timeline-img img.ufc_logo {
+  //   height: 20px;
+  //   width: 20px;
+  //   margin-left: -10px;
+  //   margin-top: -10px;
+  // }
+  // .cd-timeline-img img.gwp_logo {
+  //   height: 20px;
+  //   width: 20px;
+  //   margin-left: -10px;
+  //   margin-top: -10px;
+  // }
+  // .cd-timeline-img img.ce_logo {
+  //   height: 20px;
+  //   width: 20px;
+  // }
 }
 
 @media all and (min-width: 1170px) {
@@ -193,40 +197,54 @@
         -ms-transform: translateX(-12%) translateY(-12%);
             transform: translateX(-12%) translateY(-12%);
   }
-  #cd-timeline img.tl_logo{
-    min-height: 50px;
-    min-width: 50px;
-    margin: -25px 0 0 -25px;
+  #cd-timeline {
+    img.tl_logo {
+      min-height: 50px;
+      min-width: 50px;
+      margin: -25px 0 0 -25px;
+    }
+    img.partnership_logo {
+      min-height: 50px;
+      min-width: 50px;
+      margin: -24px 0 0 -24px;
+    }
+    img.erac_logo {
+      min-height: 40px;
+      min-width: 45px;
+      margin: -20px 0 0 -24px;
+    }
+    img.ce_logo {
+      height: 50px;
+      width: 50px;
+      transform: translate(-9px, -10px);
+    }
+    img.grafik_logo {
+      height: 50px;
+      width: 250px;
+      transform: translate(5px, -10px);
+    }
+    img.ga_logo {
+      min-height: 50px;
+      min-width: 50px;
+      margin: -25px 0 0 -25px;
+    }
+    img.jbs_logo {
+      min-height: 50px;
+      min-width: 50px;
+      margin: -24px 0 0 -25px;
+    }
+    .fa-gmu {
+      margin: 13px;
+      color: white;
+      font-size: 2em;
+    }
+    .fa.fa-code {
+      font-size: 2.5em;
+      margin: 10px 9px;
+    }
   }
-  #cd-timeline img.partnership_logo{
-    min-height: 50px;
-    min-width: 50px;
-    margin: -24px 0 0 -24px;
-  }
-  #cd-timeline img.erac_logo{
-    min-height: 40px;
-    min-width: 45px;
-    margin: -20px 0 0 -24px;
-  }
-  #cd-timeline img.ga_logo {
-    min-height: 50px;
-    min-width: 50px;
-    margin: -25px 0 0 -25px;
-  }
-  #cd-timeline img.jbs_logo{
-    min-height: 50px;
-    min-width: 50px;
-    margin: -24px 0 0 -25px;
-  }
-  #cd-timeline .fa-gmu {
-    margin: 13px;
-    color: white;
-    font-size: 2em;
-  }
-  #cd-timeline .fa.fa-code{
-    font-size: 2.5em;
-    margin: 10px 9px;
-  }
+ 
+  #cd-timeline 
   .cd-timeline-img {
     width: 60px;
     height: 60px;
@@ -274,7 +292,7 @@
     left: auto;
     right: 100%;
     border-color: transparent;
-    border-right-color: #222;
+    border-right-color: #333C42;
   }
   .cd-timeline-block:nth-child(even) .cd-timeline-content .cd-read-more {
     float: right;
